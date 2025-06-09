@@ -18,12 +18,12 @@
 
 | 文件名 | 主要功能 | 使用说明 |
 |--------|----------|----------|
-| `quick_import_healpix.py` | **主要导入脚本**，将天体数据按 healpix 分区导入 TDengine | `python3 quick_import_healpix.py --input data.csv --db sensor_db_healpix` |
-| `generate_astronomical_data.py` | 生成天体观测模拟数据 | `python3 generate_astronomical_data.py --num_sources 1000 --records_per_source 1000` |
-| `db_info.sh` | **数据库状态查询脚本**，获取数据库详细信息 | `bash db_info.sh` |
-| `temporal_query_test.py` | **时间查询性能测试脚本**，测试不同时间范围的查询性能 | `python3 temporal_query_test.py --db sensor_db_healpix` |
-| `temporal_queries_examples.sql` | 时间查询示例 SQL，包含各种时间查询模式 | `taos -f temporal_queries_examples.sql` |
-| `spatial_queries.sql` | 空间查询性能测试结果展示 | 查看空间查询测试结果 |
+| `quick_import.py` | **主要导入脚本**，将天体数据按 healpix 分区导入 TDengine | `python3 scripts/quick_import.py --input data.csv --db sensor_db_healpix` |
+| `generate_astronomical_data.py` | 生成天体观测模拟数据 | `python3 scripts/generate_astronomical_data.py --num_sources 1000 --records_per_source 1000` |
+| `db_info.sh` | **数据库状态查询脚本**，获取数据库详细信息 | `bash scripts/db_info.sh` |
+| `query_test.py` | **HealPix空间索引性能测试脚本**，测试空间查询性能 | `python3 scripts/query_test.py` |
+| `temporal_queries_examples.sql` | 时间查询示例 SQL，包含各种时间查询模式 | `taos -f scripts/temporal_queries_examples.sql` |
+
 
 ### 数据文件
 
@@ -153,7 +153,7 @@ output/
 ## 空间查询性能
 
 ### 测试场景
-根据提供的 `spatial_queries.sql` 测试结果，以下是空间查询性能对比：
+根据 `query_test.py` 测试结果，以下是空间查询性能对比：
 
 #### 最近邻检索（100个天体）
 | 方法 | 平均速度 | 总耗时 |
@@ -178,36 +178,34 @@ output/
 | 近一季度 | 100次 | 4.713秒 | 0.047秒/次 |
 | 近半年 | 100次 | 7.236秒 | 0.072秒/次 |
 
-## 时间查询性能测试
+## 时间查询示例
 
-### 测试功能
-`temporal_query_test.py` 脚本提供全面的时间查询性能测试，包括：
+### 学习时间查询语法
+`temporal_queries_examples.sql` 脚本提供各种时间查询示例，包括：
 
-1. **单天体时间序列查询**：测试指定天体不同时间范围的查询性能
-2. **多天体聚合查询**：测试多个天体的统计聚合性能  
-3. **时间范围覆盖**：从最近1小时到全部历史数据的完整测试
-4. **查询类型多样**：计数查询、数据查询、聚合查询的性能对比
+1. **单天体时间序列查询**：查询指定天体的历史观测数据
+2. **时间范围查询**：基于不同时间窗口的数据检索  
+3. **聚合查询**：统计分析和数据汇总
+4. **复合查询**：时间和空间条件的组合查询
 
-### 测试命令
+### 使用方法
 ```bash
-# 基础测试（自动选择5个天体）
-python3 temporal_query_test.py --db sensor_db_healpix
+# 运行所有时间查询示例
+taos -f scripts/temporal_queries_examples.sql
 
-# 指定天体测试
-python3 temporal_query_test.py --db sensor_db_healpix --source_ids 1001,1002,1003
-
-# 自定义输出文件
-python3 temporal_query_test.py --db sensor_db_healpix --output my_temporal_test.csv
+# 或查看文件学习SQL语法
+cat scripts/temporal_queries_examples.sql
 ```
 
-### 测试结果解读
-测试完成后会生成 CSV 报告和控制台汇总，关键指标包括：
+### 查询类型说明
+文件包含以下类型的时间查询示例：
 
-- **查询效率**：条/秒，越高越好（推荐 >10K 条/秒）
-- **响应时间**：毫秒级，越低越好（推荐 <100ms）
-- **数据量适应性**：不同时间范围下的性能稳定性
+- **基础时间查询**：使用时间戳范围筛选数据
+- **时间聚合统计**：按时间段分组统计
+- **时间序列分析**：连续时间点的数据趋势
+- **复合条件查询**：时间与其他条件的组合
 
-### 优化建议
+### 性能优化提示
 - **时间索引**：TDengine 自动为时间戳建立索引，查询时优先使用时间条件
 - **分区查询**：结合 `healpix_id` 和 `source_id` 可进一步提升性能
 - **批量处理**：大范围查询建议分批处理，避免内存占用过高
@@ -289,15 +287,3 @@ def cone_search(center_ra, center_dec, radius):
 - **易于扩展**：模块化设计，支持自定义空间算法
 
 ---
-
-**本项目为天体观测数据的空间分析提供了完整的解决方案，适用于天文台、科研院所以及任何需要处理空间时序数据的场景。**
-
-## 贡献与支持
-
-本项目的 Healpix 空间分区方案已在大规模天体数据中验证，可直接用于：
-- 天文观测数据管理系统
-- 地理信息空间分析
-- IoT 设备位置数据处理
-- 任何需要高效空间检索的时序数据场景
-
-如需技术支持或功能扩展，欢迎提供反馈！ 
