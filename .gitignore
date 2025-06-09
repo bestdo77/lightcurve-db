@@ -1,0 +1,27 @@
+# 数据文件
+*.csv
+*.dat
+*.bin
+
+# 输出文件
+output/
+results/
+logs/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+*.log
+
+# TDengine 相关
+*.tdb
+data/
