@@ -1,0 +1,9 @@
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/generate_astronomical_data.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/query_test.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/quick_import.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/edit_cache.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/rebuild_cache.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/list_install_components.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/install.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/install/local.dir
+/home/sw7777/TDengine/healpix_spatial_analysis/cpp/build/CMakeFiles/install/strip.dir

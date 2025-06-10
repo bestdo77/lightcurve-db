@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/generate_astronomical_data.dir/generate_astronomical_data.cpp.o -o generate_astronomical_data  -lstdc++fs 

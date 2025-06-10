@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/quick_import.dir/quick_import.cpp.o -o quick_import  /usr/lib/libtaos.so -lhealpix_cxx -lcfitsio -lpthread -lstdc++fs 
