@@ -25,3 +25,15 @@ Thumbs.db
 # TDengine 相关
 *.tdb
 data/
+
+# 压缩文件
+*.tar
+*.tar.gz
+*.zip
+*.7z
+*.rar
+
+# 特定文件
+minimal_healpix_package/healpix-minimal-offline.tar
+minimal_healpix_package/healpix-offline-deploy/healpix-minimal-offline.tar
+minimal_healpix_package/healpix-offline-deploy/tdengine-3.3.6.6.tar

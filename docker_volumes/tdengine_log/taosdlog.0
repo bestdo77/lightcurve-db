@@ -8338,3 +8338,177 @@
 06/16 22:53:02.684226 00000130 C UTL INFO  report client cont with QID:0x100000000643500
 06/16 22:53:02.686895 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
 06/16 22:53:04.013534 00000043 C UTL INFO  process log rotation
+06/16 22:53:19.709875 00000134 C SYN INFO  vgId:1, timer routines, sync:leader, term:1, commit-index:134, assigned-index:0, applied-index:134, first-ver:0, last-ver:134, min:-1, snap:12, snap-term:1, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:-1, snaping:-1, replicas:1, last-cfg:-1, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 134 134, 135), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:04.949}, recv hb-reply:{0:2025-06-16 19:38:04.949}, arb-token:d1#g1#1750073884948#36, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:53:23.905920 00000133 C MND INFO  update cluster uptime to 11700
+06/16 22:53:23.905943 00000133 C MND INFO  trans:68, create transaction:update-uptime, origin:update-uptime
+06/16 22:53:23.905947 00000133 C MND INFO  trans:68, action list:
+06/16 22:53:23.905950 00000133 C MND INFO  trans:68, action:0, commitAction:0 sdbType:cluster, sdbStatus:ready
+06/16 22:53:23.905953 00000133 C MND INFO  trans:68, prepare transaction
+06/16 22:53:23.905956 00000133 C MND INFO  trans:68, sync to other mnodes, stage:prepare createTime:1750085603905
+06/16 22:53:23.905959 00000133 C MND INFO  trans:68, will be proposed
+06/16 22:53:23.905987 00000133 C MND INFO  trans:68, is proposing and wait sem, seq:135
+06/16 22:53:23.908014 00000134 C MND INFO  trans:68, process sync proposal, saved:68 code:0x0, apply index:135 term:1 config:-1 role:leader raw:0x7c93c4068c9e sec:1750085603 seq:135
+06/16 22:53:23.908039 00000134 C MND INFO  trans:68, perform insert action, row:0x7c93c4068ffc stage:prepare, callfunc:1, startFunc:0
+06/16 22:53:23.908043 00000134 C MND INFO  trans:68, stage from prepare to redoAction
+06/16 22:53:23.908045 00000134 C MND INFO  trans:68, refresh transaction in process write msg
+06/16 22:53:23.908047 00000134 C MND INFO  trans:68, continue to execute stage:redoAction in syncContext, createTime:1750085603905
+06/16 22:53:23.908051 00000134 C MND INFO  trans:68, cannot continue to execute redo action stage in syncContext, continueExec:1, code:success
+06/16 22:53:23.908053 00000134 C MND INFO  vgId:1, mnode apply info changed from index:134 term:1 config:-1 to index:135 term:1 config:-1
+06/16 22:53:23.908056 00000134 C MND INFO  vgId:1, trans:68, release transaction
+06/16 22:53:23.908067 00000134 C MND INFO  trans:68, is proposed and post sem, seq:0
+06/16 22:53:23.908263 00000133 C MND INFO  trans:68, sync finished, createTime:1750085603905
+06/16 22:53:23.908313 00000133 C MND INFO  trans:68, prepare finished
+06/16 22:53:23.908319 00000133 C MND INFO  trans:68, execute transaction in prepare
+06/16 22:53:23.908322 00000133 C MND INFO  trans:68, continue to execute stage:redoAction in transContext, createTime:1750085603905
+06/16 22:53:23.908324 00000133 C MND INFO  trans:68, stage from redoAction to commit
+06/16 22:53:23.908326 00000133 C MND INFO  trans:68, continue to execute stage:commit in transContext, createTime:1750085603905
+06/16 22:53:23.908329 00000133 C MND INFO  trans:68, commit transaction
+06/16 22:53:23.908333 00000133 C MND INFO  trans:68, sync to other mnodes, stage:commit createTime:1750085603905
+06/16 22:53:23.908335 00000133 C MND INFO  trans:68, will be proposed
+06/16 22:53:23.908348 00000133 C MND INFO  trans:68, is proposing and wait sem, seq:136
+06/16 22:53:23.910069 00000134 C MND INFO  trans:68, process sync proposal, saved:68 code:0x0, apply index:136 term:1 config:-1 role:leader raw:0x7c93c4068c9e sec:1750085603 seq:136
+06/16 22:53:23.910089 00000134 C MND INFO  trans:68, perform update action, old row:0x7c93c4068ffc stage:commit create:1750085603905, new row:0x7c93c407a55c stage:commit create:1750085603905
+06/16 22:53:23.910092 00000134 C MND INFO  trans:68, stage from commit to commitAction since perform update action
+06/16 22:53:23.910095 00000134 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c407a550
+06/16 22:53:23.910097 00000134 C MND INFO  trans:68, perform delete action, row:0x7c93c407a55c stage:commit callfunc:0, stopFunc:0
+06/16 22:53:23.910100 00000134 C MND INFO  trans:68, refresh transaction in process write msg
+06/16 22:53:23.910102 00000134 C MND INFO  trans:68, continue to execute stage:commitAction in syncContext, createTime:1750085603905
+06/16 22:53:23.910106 00000134 C MND INFO  vgId:1, deleteFp:0x63fe60, type:cluster, row:0x7c93c4037190
+06/16 22:53:23.910108 00000134 C MND INFO  trans:68, commitAction:0 write to sdb, type:cluster status:ready
+06/16 22:53:23.910115 00000134 C MND INFO  trans:68, all 1 actions execute successfully
+06/16 22:53:23.910117 00000134 C MND INFO  trans:68, stage from commitAction to finished
+06/16 22:53:23.910119 00000134 C MND INFO  trans:68, continue to execute stage:finished in syncContext, createTime:1750085603905
+06/16 22:53:23.910132 00000134 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c407ae90
+06/16 22:53:23.910134 00000134 C MND INFO  trans:68, perform delete action, row:0x7c93c407ae9c stage:finished callfunc:0, stopFunc:0
+06/16 22:53:23.910136 00000134 C MND INFO  trans:68, execute finished, code:0x0, failedTimes:0 createTime:1750085603905
+06/16 22:53:23.910139 00000134 C MND INFO  vgId:1, trans:68, start to send rsp, stage:finished failedTimes:0 code:0x0
+06/16 22:53:23.910141 00000134 C MND INFO  vgId:1, trans:68, start to lock rpc array
+06/16 22:53:23.910143 00000134 C MND INFO  vgId:1, mnode apply info changed from index:135 term:1 config:-1 to index:136 term:1 config:-1
+06/16 22:53:23.910145 00000134 C MND INFO  vgId:1, trans:68, release transaction
+06/16 22:53:23.910155 00000134 C MND INFO  trans:68, is proposed and post sem, seq:0
+06/16 22:53:23.910300 00000133 C MND INFO  trans:68, sync finished, createTime:1750085603905
+06/16 22:53:23.910310 00000133 C MND INFO  trans:68, commit finished
+06/16 22:53:23.910313 00000133 C MND INFO  trans:68, stage from commit to commitAction
+06/16 22:53:23.910315 00000133 C MND INFO  trans:68, continue to execute stage:commitAction in transContext, createTime:1750085603905
+06/16 22:53:23.910320 00000133 C MND INFO  trans:68, all 1 actions execute successfully
+06/16 22:53:23.910323 00000133 C MND INFO  trans:68, stage from commitAction to finished
+06/16 22:53:23.910325 00000133 C MND INFO  trans:68, continue to execute stage:finished in transContext, createTime:1750085603905
+06/16 22:53:23.910327 00000133 C MND INFO  vgId:1, trans:68, start to send rsp, stage:finished failedTimes:0 code:0x0
+06/16 22:53:23.910329 00000133 C MND INFO  vgId:1, trans:68, start to lock rpc array
+06/16 22:53:23.910331 00000133 C MND INFO  vgId:1, trans:68, release transaction
+06/16 22:53:23.910333 00000133 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c4068ff0
+06/16 22:53:23.910335 00000133 C MND INFO  trans:68, perform delete action, row:0x7c93c4068ffc stage:finished callfunc:1, stopFunc:0
+06/16 22:53:24.569807 00000317 C SYN INFO  vgId:2, timer routines, sync:leader, term:1, commit-index:3520, assigned-index:0, applied-index:3520, first-ver:0, last-ver:3520, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[3264 3520 3520, 3521), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:10.211}, recv hb-reply:{0:2025-06-16 19:38:10.211}, arb-token:d1#g2#1750073890210#27, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:53:28.697529 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:53:28.697691 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:53:33.684378 00000130 C UTL INFO  report client cont with QID:0x100000000646300
+06/16 22:53:33.689384 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:53:58.729028 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:53:58.730149 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:04.684445 00000130 C UTL INFO  report client cont with QID:0x100000000649500
+06/16 22:54:04.687282 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:14.709798 00000532 C SYN INFO  vgId:3, timer routines, sync:leader, term:1, commit-index:7, assigned-index:0, applied-index:7, first-ver:0, last-ver:7, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 7 7, 8), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:58.636}, recv hb-reply:{0:2025-06-16 19:38:58.636}, arb-token:d1#g3#1750073938635#435, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:54:28.770392 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:28.771493 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:35.684382 00000131 C UTL INFO  report client cont with QID:0x10000000064c200
+06/16 22:54:35.688851 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:58.803862 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:54:58.803902 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:06.684268 00000131 C UTL INFO  report client cont with QID:0x10000000064f000
+06/16 22:55:06.688609 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:28.843829 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:28.844238 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:36.684452 00000131 C UTL INFO  report client cont with QID:0x100000000651d00
+06/16 22:55:36.687384 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:58.874330 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:55:58.875346 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:07.684238 00000131 C UTL INFO  report client cont with QID:0x100000000654b00
+06/16 22:56:07.686772 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:14.704992 00000679 C SYN INFO  vgId:5, timer routines, sync:leader, term:1, commit-index:118, assigned-index:0, applied-index:118, first-ver:0, last-ver:118, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 118 118, 119), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:45:58.464}, recv hb-reply:{0:2025-06-16 19:45:58.464}, arb-token:d1#g5#1750074358463#760, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:56:14.714670 00000678 C SYN INFO  vgId:4, timer routines, sync:leader, term:1, commit-index:90, assigned-index:0, applied-index:90, first-ver:0, last-ver:90, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 90 90, 91), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:45:58.464}, recv hb-reply:{0:2025-06-16 19:45:58.464}, arb-token:d1#g4#1750074358462#357, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:56:28.904811 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:28.905855 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:38.684433 00000130 C UTL INFO  report client cont with QID:0x100000000657900
+06/16 22:56:38.687512 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:58.943077 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:56:58.943693 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:09.684182 00000130 C UTL INFO  report client cont with QID:0x10000000065a700
+06/16 22:57:09.687101 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:28.971587 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:28.972732 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:40.684463 00000130 C UTL INFO  report client cont with QID:0x10000000065d500
+06/16 22:57:40.689282 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:59.001282 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:57:59.002599 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:11.684223 00000130 C UTL INFO  report client cont with QID:0x100000000660300
+06/16 22:58:11.687599 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:19.724881 00000134 C SYN INFO  vgId:1, timer routines, sync:leader, term:1, commit-index:136, assigned-index:0, applied-index:136, first-ver:0, last-ver:136, min:-1, snap:12, snap-term:1, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:-1, snaping:-1, replicas:1, last-cfg:-1, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 136 136, 137), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:04.949}, recv hb-reply:{0:2025-06-16 19:38:04.949}, arb-token:d1#g1#1750073884948#36, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:58:24.388054 00000133 C MND INFO  update cluster uptime to 12000
+06/16 22:58:24.388085 00000133 C MND INFO  trans:69, create transaction:update-uptime, origin:update-uptime
+06/16 22:58:24.388088 00000133 C MND INFO  trans:69, action list:
+06/16 22:58:24.388091 00000133 C MND INFO  trans:69, action:0, commitAction:0 sdbType:cluster, sdbStatus:ready
+06/16 22:58:24.388094 00000133 C MND INFO  trans:69, prepare transaction
+06/16 22:58:24.388109 00000133 C MND INFO  trans:69, sync to other mnodes, stage:prepare createTime:1750085904388
+06/16 22:58:24.388112 00000133 C MND INFO  trans:69, will be proposed
+06/16 22:58:24.388128 00000133 C MND INFO  trans:69, is proposing and wait sem, seq:137
+06/16 22:58:24.389582 00000134 C MND INFO  trans:69, process sync proposal, saved:69 code:0x0, apply index:137 term:1 config:-1 role:leader raw:0x7c93c4079a1e sec:1750085904 seq:137
+06/16 22:58:24.389619 00000134 C MND INFO  trans:69, perform insert action, row:0x7c93c4068c6c stage:prepare, callfunc:1, startFunc:0
+06/16 22:58:24.389648 00000134 C MND INFO  trans:69, stage from prepare to redoAction
+06/16 22:58:24.389650 00000134 C MND INFO  trans:69, refresh transaction in process write msg
+06/16 22:58:24.389652 00000134 C MND INFO  trans:69, continue to execute stage:redoAction in syncContext, createTime:1750085904388
+06/16 22:58:24.389656 00000134 C MND INFO  trans:69, cannot continue to execute redo action stage in syncContext, continueExec:1, code:success
+06/16 22:58:24.389658 00000134 C MND INFO  vgId:1, mnode apply info changed from index:136 term:1 config:-1 to index:137 term:1 config:-1
+06/16 22:58:24.389660 00000134 C MND INFO  vgId:1, trans:69, release transaction
+06/16 22:58:24.389682 00000134 C MND INFO  trans:69, is proposed and post sem, seq:0
+06/16 22:58:24.389692 00000133 C MND INFO  trans:69, sync finished, createTime:1750085904388
+06/16 22:58:24.389709 00000133 C MND INFO  trans:69, prepare finished
+06/16 22:58:24.389713 00000133 C MND INFO  trans:69, execute transaction in prepare
+06/16 22:58:24.389715 00000133 C MND INFO  trans:69, continue to execute stage:redoAction in transContext, createTime:1750085904388
+06/16 22:58:24.389718 00000133 C MND INFO  trans:69, stage from redoAction to commit
+06/16 22:58:24.389720 00000133 C MND INFO  trans:69, continue to execute stage:commit in transContext, createTime:1750085904388
+06/16 22:58:24.389723 00000133 C MND INFO  trans:69, commit transaction
+06/16 22:58:24.389727 00000133 C MND INFO  trans:69, sync to other mnodes, stage:commit createTime:1750085904388
+06/16 22:58:24.389762 00000133 C MND INFO  trans:69, will be proposed
+06/16 22:58:24.389778 00000133 C MND INFO  trans:69, is proposing and wait sem, seq:138
+06/16 22:58:24.401674 00000134 C MND INFO  trans:69, process sync proposal, saved:69 code:0x0, apply index:138 term:1 config:-1 role:leader raw:0x7c93c406b49e sec:1750085904 seq:138
+06/16 22:58:24.401720 00000134 C MND INFO  trans:69, perform update action, old row:0x7c93c4068c6c stage:commit create:1750085904388, new row:0x7c93c407b0cc stage:commit create:1750085904388
+06/16 22:58:24.401724 00000134 C MND INFO  trans:69, stage from commit to commitAction since perform update action
+06/16 22:58:24.401727 00000134 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c407b0c0
+06/16 22:58:24.401735 00000134 C MND INFO  trans:69, perform delete action, row:0x7c93c407b0cc stage:commit callfunc:0, stopFunc:0
+06/16 22:58:24.401739 00000134 C MND INFO  trans:69, refresh transaction in process write msg
+06/16 22:58:24.401741 00000134 C MND INFO  trans:69, continue to execute stage:commitAction in syncContext, createTime:1750085904388
+06/16 22:58:24.401745 00000134 C MND INFO  vgId:1, deleteFp:0x63fe60, type:cluster, row:0x7c93c40737b0
+06/16 22:58:24.401748 00000134 C MND INFO  trans:69, commitAction:0 write to sdb, type:cluster status:ready
+06/16 22:58:24.401750 00000134 C MND INFO  trans:69, all 1 actions execute successfully
+06/16 22:58:24.401752 00000134 C MND INFO  trans:69, stage from commitAction to finished
+06/16 22:58:24.401755 00000134 C MND INFO  trans:69, continue to execute stage:finished in syncContext, createTime:1750085904388
+06/16 22:58:24.401759 00000134 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c407ba00
+06/16 22:58:24.401761 00000134 C MND INFO  trans:69, perform delete action, row:0x7c93c407ba0c stage:finished callfunc:0, stopFunc:0
+06/16 22:58:24.401764 00000134 C MND INFO  trans:69, execute finished, code:0x0, failedTimes:0 createTime:1750085904388
+06/16 22:58:24.401777 00000134 C MND INFO  vgId:1, trans:69, start to send rsp, stage:finished failedTimes:0 code:0x0
+06/16 22:58:24.401779 00000134 C MND INFO  vgId:1, trans:69, start to lock rpc array
+06/16 22:58:24.401782 00000134 C MND INFO  vgId:1, mnode apply info changed from index:137 term:1 config:-1 to index:138 term:1 config:-1
+06/16 22:58:24.401784 00000134 C MND INFO  vgId:1, trans:69, release transaction
+06/16 22:58:24.401798 00000134 C MND INFO  trans:69, is proposed and post sem, seq:0
+06/16 22:58:24.401812 00000133 C MND INFO  trans:69, sync finished, createTime:1750085904388
+06/16 22:58:24.401828 00000133 C MND INFO  trans:69, commit finished
+06/16 22:58:24.401830 00000133 C MND INFO  trans:69, stage from commit to commitAction
+06/16 22:58:24.401832 00000133 C MND INFO  trans:69, continue to execute stage:commitAction in transContext, createTime:1750085904388
+06/16 22:58:24.401836 00000133 C MND INFO  trans:69, all 1 actions execute successfully
+06/16 22:58:24.401838 00000133 C MND INFO  trans:69, stage from commitAction to finished
+06/16 22:58:24.401840 00000133 C MND INFO  trans:69, continue to execute stage:finished in transContext, createTime:1750085904388
+06/16 22:58:24.401842 00000133 C MND INFO  vgId:1, trans:69, start to send rsp, stage:finished failedTimes:0 code:0x0
+06/16 22:58:24.401844 00000133 C MND INFO  vgId:1, trans:69, start to lock rpc array
+06/16 22:58:24.401847 00000133 C MND INFO  vgId:1, trans:69, release transaction
+06/16 22:58:24.401849 00000133 C MND INFO  vgId:1, deleteFp:0x614c30, type:trans, row:0x7c93c4068c60
+06/16 22:58:24.401852 00000133 C MND INFO  trans:69, perform delete action, row:0x7c93c4068c6c stage:finished callfunc:1, stopFunc:0
+06/16 22:58:24.575268 00000317 C SYN INFO  vgId:2, timer routines, sync:leader, term:1, commit-index:3610, assigned-index:0, applied-index:3610, first-ver:0, last-ver:3610, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[3354 3610 3610, 3611), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:10.211}, recv hb-reply:{0:2025-06-16 19:38:10.211}, arb-token:d1#g2#1750073890210#27, msg[sent:0, recv:0, slow-recv:0]
+06/16 22:58:29.033337 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:29.033375 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:42.684489 00000131 C UTL INFO  report client cont with QID:0x100000000663100
+06/16 22:58:42.689114 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:59.072319 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:58:59.072357 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:59:13.684345 00000130 C UTL INFO  report client cont with QID:0x100000000665f00
+06/16 22:59:13.688954 00000394 C RPC WARN  http-report failed to acquire recv buf since Ref is not there
+06/16 22:59:14.734707 00000532 C SYN INFO  vgId:3, timer routines, sync:leader, term:1, commit-index:7, assigned-index:0, applied-index:7, first-ver:0, last-ver:7, min:-1, snap:-1, snap-term:0, elect-times:0, as-leader-times:1, as-assigned-leader-times:0, cfg-ch-times:0, hb-slow:0, hbr-slow:0, aq-items:0, snaping:-1, replicas:1, last-cfg:0, chging:0, restore:1, quorum:1, elect-lc-timer:1, hb:0, buffer:[-1 7 7, 8), repl-mgrs:{0:0 [0, 0, 0] 0}, members:{num:1, as:0, [tdengine:6030]}, send hb:{0:}, recv hb:{0:2025-06-16 19:38:58.636}, recv hb-reply:{0:2025-06-16 19:38:58.636}, arb-token:d1#g3#1750073938635#435, msg[sent:0, recv:0, slow-recv:0]
