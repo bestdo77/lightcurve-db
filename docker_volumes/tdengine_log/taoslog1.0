@@ -1,0 +1,1384 @@
+==================================================
+                new log file
+==================================================
+06/16 19:38:46.370595 00000405 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:38:46.370602 00000405 C UTL INFO  env file:.env not load
+06/16 19:38:46.370607 00000405 C UTL INFO  load from env variables cfg success
+06/16 19:38:46.370669 00000405 C UTL INFO                       global config
+06/16 19:38:46.370671 00000405 C UTL INFO  =================================================================
+06/16 19:38:46.370672 00000405 C UTL INFO  default      forceReadConfig                  0
+06/16 19:38:46.370674 00000405 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:38:46.370674 00000405 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:38:46.370675 00000405 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:38:46.370676 00000405 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:38:46.370679 00000405 C UTL INFO  default      queryPolicy                      1
+06/16 19:38:46.370680 00000405 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:38:46.370681 00000405 C UTL INFO  default      enableQueryHb                    1
+06/16 19:38:46.370681 00000405 C UTL INFO  default      enableScience                    0
+06/16 19:38:46.370682 00000405 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:38:46.370683 00000405 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:38:46.370683 00000405 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:38:46.370684 00000405 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:38:46.370685 00000405 C UTL INFO  default      keepColumnName                   0
+06/16 19:38:46.370685 00000405 C UTL INFO  default      smlChildTableName                
+06/16 19:38:46.370686 00000405 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:38:46.370687 00000405 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:38:46.370687 00000405 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:38:46.370688 00000405 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:38:46.370689 00000405 C UTL INFO  default      minSlidingTime                   1
+06/16 19:38:46.370689 00000405 C UTL INFO  default      minIntervalTime                  1
+06/16 19:38:46.370690 00000405 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:38:46.370691 00000405 C UTL INFO  default      useAdapter                       0
+06/16 19:38:46.370691 00000405 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:38:46.370692 00000405 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:38:46.370693 00000405 C UTL INFO  default      bypassFlag                       0
+06/16 19:38:46.370694 00000405 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:38:46.370694 00000405 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:38:46.370695 00000405 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:38:46.370696 00000405 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:38:46.370696 00000405 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:38:46.370697 00000405 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:38:46.370698 00000405 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:38:46.370698 00000405 C UTL INFO  default      streamCoverage                   0
+06/16 19:38:46.370699 00000405 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:38:46.370699 00000405 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:38:46.370700 00000405 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:38:46.370701 00000405 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:38:46.370701 00000405 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:38:46.370702 00000405 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:38:46.370708 00000405 C UTL INFO  default      asyncLog                         1
+06/16 19:38:46.370709 00000405 C UTL INFO  default      logKeepDays                      0
+06/16 19:38:46.370710 00000405 C UTL INFO  default      debugFlag                        0
+06/16 19:38:46.370711 00000405 C UTL INFO  default      simDebugFlag                     131
+06/16 19:38:46.370711 00000405 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:38:46.370712 00000405 C UTL INFO  default      uDebugFlag                       131
+06/16 19:38:46.370712 00000405 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:38:46.370713 00000405 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:38:46.370714 00000405 C UTL INFO  default      qDebugFlag                       131
+06/16 19:38:46.370714 00000405 C UTL INFO  default      cDebugFlag                       131
+06/16 19:38:46.370715 00000405 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:38:46.370715 00000405 C UTL INFO  default      numOfCores                       16.00
+06/16 19:38:46.370717 00000405 C UTL INFO  default      simdEnable                       1
+06/16 19:38:46.370718 00000405 C UTL INFO  default      AVX512Enable                     0
+06/16 19:38:46.370718 00000405 C UTL INFO  default      tagFilterCache                   0
+06/16 19:38:46.370719 00000405 C UTL INFO  default      openMax                          1048576
+06/16 19:38:46.370720 00000405 C UTL INFO  default      streamMax                        16
+06/16 19:38:46.370720 00000405 C UTL INFO  default      pageSizeKB                       4
+06/16 19:38:46.370721 00000405 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:38:46.370722 00000405 C UTL INFO  default      os sysname                       Linux
+06/16 19:38:46.370722 00000405 C UTL INFO  default      os nodename                      tdengine
+06/16 19:38:46.370723 00000405 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:38:46.370723 00000405 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:38:46.370724 00000405 C UTL INFO  default      os machine                       x86_64
+06/16 19:38:46.370725 00000405 C UTL INFO  default      version                          3.3.6.6
+06/16 19:38:46.370725 00000405 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:38:46.370726 00000405 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:38:46.370726 00000405 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:38:46.370727 00000405 C UTL INFO  =================================================================
+06/16 19:38:46.370728 00000405 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:38:46.371073 00000405 C TSC INFO  monitor init
+06/16 19:38:46.371395 00000412 C UTL INFO  scheduler tmr-taskQ is started, thread:412
+06/16 19:38:46.371406 00000413 C UTL INFO  scheduler high-tmr-taskQ is started, thread:413
+06/16 19:38:46.371602 00000405 C TSC INFO  starting to initialize TAOS driver
+06/16 19:38:46.371614 00000405 C QRY INFO  catalog init
+06/16 19:38:46.371690 00000405 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:38:46.371701 00000405 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:38:46.371774 00000415 C TSC INFO  monitor update thread started
+06/16 19:38:46.371797 00000405 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:38:46.371846 00000405 C QRY INFO  generate clientId:7473988648298381972
+06/16 19:38:46.371870 00000416 C QRY INFO  catalog update thread started
+06/16 19:38:46.371965 00000405 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:38:46.372043 00000405 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:38:46.372094 00000405 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:38:46.372136 00000405 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:38:46.372198 00000405 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:38:46.372254 00000405 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:38:46.372312 00000405 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:38:46.372354 00000405 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:38:46.372396 00000405 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:38:46.372444 00000405 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:38:46.372495 00000405 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:38:46.372546 00000405 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:38:46.372606 00000405 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:38:46.372658 00000405 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:38:46.372704 00000405 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:38:46.372769 00000405 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:38:46.372808 00000405 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:38:46.372848 00000405 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:38:46.372886 00000405 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:38:46.372928 00000405 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:38:46.372967 00000405 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:38:46.373007 00000405 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:38:46.373054 00000405 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:38:46.373103 00000405 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:38:46.373147 00000405 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:38:46.373197 00000405 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:38:46.373240 00000405 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:38:46.373309 00000405 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:38:46.373351 00000405 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:38:46.373399 00000405 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:38:46.373446 00000405 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:38:46.373503 00000405 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:38:46.373506 00000405 C UTL INFO  worker:taskWorkPool, queue:0x318de6c0 is allocated, ahandle:(nil)
+06/16 19:38:46.373508 00000405 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:38:46.373901 00000405 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:38:46.374036 00000449 C TSC INFO  no crash info was found
+06/16 19:38:46.374123 00000405 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:38:46.374209 00000405 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:38:46.374211 00000405 C TSC INFO  ep:0, tdengine:6030
+06/16 19:38:46.374212 00000405 C TSC INFO  ep:1, tdengine:6030
+06/16 19:38:46.375432 00000405 C TSC INFO  app initialized, appId:0x115537888e200001
+06/16 19:38:46.375513 00000405 C TSC INFO  new app inst mgr:0x31900000, user:root, ip:tdengine, port:6030
+06/16 19:38:46.375524 00000405 C TSC INFO  conn:0x2, created, p:0x319b47f0
+06/16 19:38:46.376671 00000418 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:38:46.376735 00000418 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x73e100000fa0
+06/16 19:38:46.376747 00000418 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x73e100000fa0, create counter:taos_slow_sql:count 0x73e100003330
+06/16 19:38:46.376757 00000418 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x73e100000fa0, create counter:taos_sql_req:count 0x73e100003df0
+06/16 19:38:46.376882 00000405 C TSC INFO  conn:0x2, connection is opening, connId:307700964, dnodeConn:0x2, QID:0x68b19588e2e70001
+06/16 19:38:46.378862 00000419 C QRY INFO  QID:0x68b19588e2e90002 init with pTrans:0x2
+06/16 19:38:46.378938 00000419 C QRY INFO  pTrans 0x2 add to hbConnections for epId:1
+06/16 19:38:46.379952 00000417 C QRY INFO  hb connection updated, nodeId:1, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:38:46.382105 00000405 C QRY INFO  QID:0x68b19588e2e90002, SID:1, CID:0x67b8f113a5208294, TID:0x1, EID:0, hb mark removed from hbConnections, epId:1
+06/16 19:38:46.383913 00000405 C TSC INFO  start to cleanup client environment
+06/16 19:38:46.383919 00000405 C TSC INFO  monitor close
+06/16 19:38:46.476973 00000415 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:38:46.577260 00000405 C QRY INFO  start to destroy catalog
+06/16 19:38:46.577543 00000416 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x319bb9b0
+06/16 19:38:46.577580 00000416 C QRY INFO  catalog update thread stopped
+06/16 19:38:46.577615 00000405 C QRY INFO  catalog destroyed
+06/16 19:38:46.577653 00000405 C QRY INFO  hbConnections cleanup
+06/16 19:38:46.577727 00000427 C UTL INFO  worker:taskWorkPool:10 qset:0x318de5a0, got no message and exiting, thread:00000427
+06/16 19:38:46.577790 00000428 C UTL INFO  worker:taskWorkPool:11 qset:0x318de5a0, got no message and exiting, thread:00000428
+06/16 19:38:46.577790 00000429 C UTL INFO  worker:taskWorkPool:12 qset:0x318de5a0, got no message and exiting, thread:00000429
+06/16 19:38:46.577834 00000425 C UTL INFO  worker:taskWorkPool:8 qset:0x318de5a0, got no message and exiting, thread:00000425
+06/16 19:38:46.577819 00000424 C UTL INFO  worker:taskWorkPool:7 qset:0x318de5a0, got no message and exiting, thread:00000424
+06/16 19:38:46.577841 00000430 C UTL INFO  worker:taskWorkPool:13 qset:0x318de5a0, got no message and exiting, thread:00000430
+06/16 19:38:46.577847 00000431 C UTL INFO  worker:taskWorkPool:14 qset:0x318de5a0, got no message and exiting, thread:00000431
+06/16 19:38:46.577860 00000432 C UTL INFO  worker:taskWorkPool:15 qset:0x318de5a0, got no message and exiting, thread:00000432
+06/16 19:38:46.577864 00000418 C UTL INFO  worker:taskWorkPool:1 qset:0x318de5a0, got no message and exiting, thread:00000418
+06/16 19:38:46.577944 00000423 C UTL INFO  worker:taskWorkPool:6 qset:0x318de5a0, got no message and exiting, thread:00000423
+06/16 19:38:46.577955 00000443 C UTL INFO  worker:taskWorkPool:26 qset:0x318de5a0, got no message and exiting, thread:00000443
+06/16 19:38:46.578267 00000445 C UTL INFO  worker:taskWorkPool:28 qset:0x318de5a0, got no message and exiting, thread:00000445
+06/16 19:38:46.578700 00000446 C UTL INFO  worker:taskWorkPool:29 qset:0x318de5a0, got no message and exiting, thread:00000446
+06/16 19:38:46.586829 00000422 C UTL INFO  worker:taskWorkPool:5 qset:0x318de5a0, got no message and exiting, thread:00000422
+06/16 19:38:46.587079 00000442 C UTL INFO  worker:taskWorkPool:25 qset:0x318de5a0, got no message and exiting, thread:00000442
+06/16 19:38:46.590548 00000417 C UTL INFO  worker:taskWorkPool:0 qset:0x318de5a0, got no message and exiting, thread:00000417
+06/16 19:38:46.590549 00000419 C UTL INFO  worker:taskWorkPool:2 qset:0x318de5a0, got no message and exiting, thread:00000419
+06/16 19:38:46.590553 00000448 C UTL INFO  worker:taskWorkPool:31 qset:0x318de5a0, got no message and exiting, thread:00000448
+06/16 19:38:46.590578 00000434 C UTL INFO  worker:taskWorkPool:17 qset:0x318de5a0, got no message and exiting, thread:00000434
+06/16 19:38:46.593706 00000447 C UTL INFO  worker:taskWorkPool:30 qset:0x318de5a0, got no message and exiting, thread:00000447
+06/16 19:38:46.600352 00000435 C UTL INFO  worker:taskWorkPool:18 qset:0x318de5a0, got no message and exiting, thread:00000435
+06/16 19:38:46.600938 00000433 C UTL INFO  worker:taskWorkPool:16 qset:0x318de5a0, got no message and exiting, thread:00000433
+06/16 19:38:46.601154 00000437 C UTL INFO  worker:taskWorkPool:20 qset:0x318de5a0, got no message and exiting, thread:00000437
+06/16 19:38:46.603546 00000440 C UTL INFO  worker:taskWorkPool:23 qset:0x318de5a0, got no message and exiting, thread:00000440
+06/16 19:38:46.604582 00000444 C UTL INFO  worker:taskWorkPool:27 qset:0x318de5a0, got no message and exiting, thread:00000444
+06/16 19:38:46.604587 00000426 C UTL INFO  worker:taskWorkPool:9 qset:0x318de5a0, got no message and exiting, thread:00000426
+06/16 19:38:46.604630 00000420 C UTL INFO  worker:taskWorkPool:3 qset:0x318de5a0, got no message and exiting, thread:00000420
+06/16 19:38:46.604645 00000421 C UTL INFO  worker:taskWorkPool:4 qset:0x318de5a0, got no message and exiting, thread:00000421
+06/16 19:38:46.605051 00000436 C UTL INFO  worker:taskWorkPool:19 qset:0x318de5a0, got no message and exiting, thread:00000436
+06/16 19:38:46.608556 00000441 C UTL INFO  worker:taskWorkPool:24 qset:0x318de5a0, got no message and exiting, thread:00000441
+06/16 19:38:46.608559 00000438 C UTL INFO  worker:taskWorkPool:21 qset:0x318de5a0, got no message and exiting, thread:00000438
+06/16 19:38:46.609031 00000439 C UTL INFO  worker:taskWorkPool:22 qset:0x318de5a0, got no message and exiting, thread:00000439
+06/16 19:38:46.611543 00000405 C TSC INFO  destroy app inst mgr 0x31900000
+06/16 19:38:46.611554 00000405 C RPC INFO  start to close rpc
+06/16 19:38:46.615575 00000405 C RPC INFO  end to close rpc
+06/16 19:38:46.615581 00000405 C TSC INFO  cluster instance map cleaned
+06/16 19:38:46.615661 00000405 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:38:46.615700 00000405 C UTL INFO  [regex cache] destory regex cache
+06/16 19:38:46.615704 00000405 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:38:58.528674 00000459 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:38:58.528681 00000459 C UTL INFO  env file:.env not load
+06/16 19:38:58.528685 00000459 C UTL INFO  load from env variables cfg success
+06/16 19:38:58.528742 00000459 C UTL INFO                       global config
+06/16 19:38:58.528743 00000459 C UTL INFO  =================================================================
+06/16 19:38:58.528745 00000459 C UTL INFO  default      forceReadConfig                  0
+06/16 19:38:58.528746 00000459 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:38:58.528746 00000459 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:38:58.528747 00000459 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:38:58.528748 00000459 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:38:58.528751 00000459 C UTL INFO  default      queryPolicy                      1
+06/16 19:38:58.528752 00000459 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:38:58.528752 00000459 C UTL INFO  default      enableQueryHb                    1
+06/16 19:38:58.528753 00000459 C UTL INFO  default      enableScience                    0
+06/16 19:38:58.528753 00000459 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:38:58.528754 00000459 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:38:58.528755 00000459 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:38:58.528755 00000459 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:38:58.528756 00000459 C UTL INFO  default      keepColumnName                   0
+06/16 19:38:58.528756 00000459 C UTL INFO  default      smlChildTableName                
+06/16 19:38:58.528757 00000459 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:38:58.528758 00000459 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:38:58.528759 00000459 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:38:58.528759 00000459 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:38:58.528761 00000459 C UTL INFO  default      minSlidingTime                   1
+06/16 19:38:58.528761 00000459 C UTL INFO  default      minIntervalTime                  1
+06/16 19:38:58.528762 00000459 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:38:58.528763 00000459 C UTL INFO  default      useAdapter                       0
+06/16 19:38:58.528763 00000459 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:38:58.528764 00000459 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:38:58.528764 00000459 C UTL INFO  default      bypassFlag                       0
+06/16 19:38:58.528765 00000459 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:38:58.528765 00000459 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:38:58.528766 00000459 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:38:58.528767 00000459 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:38:58.528767 00000459 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:38:58.528768 00000459 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:38:58.528768 00000459 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:38:58.528769 00000459 C UTL INFO  default      streamCoverage                   0
+06/16 19:38:58.528769 00000459 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:38:58.528770 00000459 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:38:58.528770 00000459 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:38:58.528771 00000459 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:38:58.528772 00000459 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:38:58.528773 00000459 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:38:58.528778 00000459 C UTL INFO  default      asyncLog                         1
+06/16 19:38:58.528780 00000459 C UTL INFO  default      logKeepDays                      0
+06/16 19:38:58.528780 00000459 C UTL INFO  default      debugFlag                        0
+06/16 19:38:58.528781 00000459 C UTL INFO  default      simDebugFlag                     131
+06/16 19:38:58.528781 00000459 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:38:58.528782 00000459 C UTL INFO  default      uDebugFlag                       131
+06/16 19:38:58.528783 00000459 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:38:58.528783 00000459 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:38:58.528784 00000459 C UTL INFO  default      qDebugFlag                       131
+06/16 19:38:58.528784 00000459 C UTL INFO  default      cDebugFlag                       131
+06/16 19:38:58.528785 00000459 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:38:58.528785 00000459 C UTL INFO  default      numOfCores                       16.00
+06/16 19:38:58.528787 00000459 C UTL INFO  default      simdEnable                       1
+06/16 19:38:58.528787 00000459 C UTL INFO  default      AVX512Enable                     0
+06/16 19:38:58.528788 00000459 C UTL INFO  default      tagFilterCache                   0
+06/16 19:38:58.528789 00000459 C UTL INFO  default      openMax                          1048576
+06/16 19:38:58.528789 00000459 C UTL INFO  default      streamMax                        16
+06/16 19:38:58.528790 00000459 C UTL INFO  default      pageSizeKB                       4
+06/16 19:38:58.528790 00000459 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:38:58.528791 00000459 C UTL INFO  default      os sysname                       Linux
+06/16 19:38:58.528791 00000459 C UTL INFO  default      os nodename                      tdengine
+06/16 19:38:58.528792 00000459 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:38:58.528792 00000459 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:38:58.528793 00000459 C UTL INFO  default      os machine                       x86_64
+06/16 19:38:58.528794 00000459 C UTL INFO  default      version                          3.3.6.6
+06/16 19:38:58.528794 00000459 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:38:58.528795 00000459 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:38:58.528795 00000459 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:38:58.528796 00000459 C UTL INFO  =================================================================
+06/16 19:38:58.528796 00000459 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:38:58.529167 00000459 C TSC INFO  monitor init
+06/16 19:38:58.529393 00000466 C UTL INFO  scheduler tmr-taskQ is started, thread:466
+06/16 19:38:58.529464 00000467 C UTL INFO  scheduler high-tmr-taskQ is started, thread:467
+06/16 19:38:58.529591 00000469 C TSC INFO  monitor update thread started
+06/16 19:38:58.529665 00000459 C TSC INFO  starting to initialize TAOS driver
+06/16 19:38:58.529678 00000459 C QRY INFO  catalog init
+06/16 19:38:58.529741 00000459 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:38:58.529749 00000459 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:38:58.529775 00000459 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:38:58.529802 00000459 C QRY INFO  generate clientId:15237875436453803914
+06/16 19:38:58.529817 00000470 C QRY INFO  catalog update thread started
+06/16 19:38:58.529886 00000459 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:38:58.529937 00000459 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:38:58.529990 00000459 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:38:58.530034 00000459 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:38:58.530078 00000459 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:38:58.530121 00000459 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:38:58.530165 00000459 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:38:58.530207 00000459 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:38:58.530244 00000459 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:38:58.530291 00000459 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:38:58.530320 00000459 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:38:58.530364 00000459 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:38:58.530410 00000459 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:38:58.530453 00000459 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:38:58.530497 00000459 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:38:58.530546 00000459 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:38:58.530594 00000459 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:38:58.530643 00000459 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:38:58.530689 00000459 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:38:58.530737 00000459 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:38:58.530779 00000459 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:38:58.530818 00000459 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:38:58.530862 00000459 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:38:58.530899 00000459 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:38:58.530945 00000459 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:38:58.531004 00000459 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:38:58.531053 00000459 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:38:58.531103 00000459 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:38:58.531154 00000459 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:38:58.531196 00000459 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:38:58.531339 00000459 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:38:58.531384 00000459 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:38:58.531387 00000459 C UTL INFO  worker:taskWorkPool, queue:0x125806c0 is allocated, ahandle:(nil)
+06/16 19:38:58.531392 00000459 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:38:58.531651 00000503 C TSC INFO  no crash info was found
+06/16 19:38:58.531671 00000459 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:38:58.531886 00000459 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:38:58.531962 00000459 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:38:58.531964 00000459 C TSC INFO  ep:0, tdengine:6030
+06/16 19:38:58.531965 00000459 C TSC INFO  ep:1, tdengine:6030
+06/16 19:38:58.533299 00000459 C TSC INFO  app initialized, appId:0x726b378891200001
+06/16 19:38:58.533365 00000459 C TSC INFO  new app inst mgr:0x125a2000, user:root, ip:tdengine, port:6030
+06/16 19:38:58.533373 00000459 C TSC INFO  conn:0x2, created, p:0x126567f0
+06/16 19:38:58.534204 00000471 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:38:58.534248 00000471 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x7c04e8000fa0
+06/16 19:38:58.534257 00000471 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x7c04e8000fa0, create counter:taos_slow_sql:count 0x7c04e8003330
+06/16 19:38:58.534280 00000471 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x7c04e8000fa0, create counter:taos_sql_req:count 0x7c04e8003df0
+06/16 19:38:58.534350 00000459 C TSC INFO  conn:0x2, connection is opening, connId:2221236321, dnodeConn:0x2, QID:0x2871cb8912650001
+06/16 19:38:58.535594 00000472 C QRY INFO  QID:0x2871cb8912660002 init with pTrans:0x2
+06/16 19:38:58.535667 00000473 C QRY INFO  QID:0x2871cb8912660003 init with pTrans:0x2
+06/16 19:38:58.535678 00000472 C QRY INFO  pTrans 0x2 add to hbConnections for epId:1
+06/16 19:38:58.536423 00000476 C QRY INFO  hb connection updated, nodeId:1, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:38:58.538144 00000459 C QRY INFO  QID:0x2871cb8912660003, SID:1, CID:0xd377cef9c97ab78a, TID:0x2, EID:0, hb mark removed from hbConnections, epId:1
+06/16 19:38:58.542631 00000483 C QRY INFO  QID:0x2871cb89126e0004 init with pTrans:0x2
+06/16 19:38:58.542674 00000483 C QRY INFO  pTrans 0x2 add to hbConnections for epId:1
+06/16 19:38:58.543586 00000484 C QRY INFO  hb connection updated, nodeId:1, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x5
+06/16 19:38:58.544617 00000515 C QRY INFO  QID:0x2871cb89126e0004, SID:1, CID:0xd377cef9c97ab78a, TID:0x3, EID:0, hb mark removed from hbConnections, epId:1
+06/16 19:38:58.708339 00000497 C QRY INFO  QID:0x2871cb8913130009 init with pTrans:0x2
+06/16 19:38:58.708389 00000497 C QRY INFO  pTrans 0x2 add to hbConnections for epId:1
+06/16 19:38:58.709112 00000499 C QRY INFO  hb connection updated, nodeId:1, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x7
+06/16 19:38:58.711722 00000537 C QRY INFO  QID:0x2871cb8913130009, SID:1, CID:0xd377cef9c97ab78a, TID:0x4, EID:0, hb mark removed from hbConnections, epId:1
+06/16 19:38:58.733113 00000473 C QRY INFO  QID:0x2871cb89132c000b init with pTrans:0x2
+06/16 19:38:58.739987 00000476 C QRY INFO  QID:0x2871cb891333000c init with pTrans:0x2
+06/16 19:38:58.753941 00000515 C QRY INFO  QID:0x2871cb891341000d init with pTrans:0x2
+06/16 19:38:58.754891 00000478 C QRY ERROR QID:0x2871cb891341000d, SID:1, CID:0xd377cef9c97ab78a, TID:0x7, EID:0, task failed and no more retry, code:Timestamp data out of range
+06/16 19:38:58.768713 00000515 C QRY INFO  QID:0x2871cb891350000e init with pTrans:0x2
+06/16 19:38:58.769243 00000479 C QRY ERROR QID:0x2871cb891350000e, SID:1, CID:0xd377cef9c97ab78a, TID:0x8, EID:0, task failed and no more retry, code:Timestamp data out of range
+06/16 19:38:58.771886 00000480 C QRY INFO  QID:0x2871cb891352000f init with pTrans:0x2
+06/16 19:38:58.771942 00000480 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:38:58.772567 00000481 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x9
+06/16 19:38:58.773254 00000515 C QRY INFO  QID:0x2871cb891352000f, SID:1, CID:0xd377cef9c97ab78a, TID:0x9, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:38:58.775720 00000487 C QRY INFO  QID:0x2871cb8913570010 init with pTrans:0x2
+06/16 19:38:58.775763 00000487 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:38:58.776241 00000488 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0xb
+06/16 19:38:58.777341 00000515 C QRY INFO  QID:0x2871cb8913570010, SID:1, CID:0xd377cef9c97ab78a, TID:0xa, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:38:58.783908 00000494 C QRY INFO  QID:0x2871cb89135f0011 init with pTrans:0x2
+06/16 19:38:58.783951 00000494 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:38:58.784589 00000495 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0xd
+06/16 19:38:58.785717 00000515 C QRY INFO  QID:0x2871cb89135f0011, SID:1, CID:0xd377cef9c97ab78a, TID:0xb, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:38:58.790075 00000499 C QRY INFO  QID:0x2871cb8913650012 init with pTrans:0x2
+06/16 19:38:58.790140 00000499 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:38:58.790589 00000500 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0xf
+06/16 19:38:58.791951 00000515 C QRY INFO  QID:0x2871cb8913650012, SID:1, CID:0xd377cef9c97ab78a, TID:0xc, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:38:58.793208 00000515 C TSC INFO  start to cleanup client environment
+06/16 19:38:58.793213 00000515 C TSC INFO  monitor close
+06/16 19:38:58.834819 00000469 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:38:58.935236 00000515 C QRY INFO  start to destroy catalog
+06/16 19:38:58.935329 00000470 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x7c04e00095b0
+06/16 19:38:58.935345 00000470 C QRY INFO  catalog update thread stopped
+06/16 19:38:58.935588 00000515 C QRY INFO  catalog destroyed
+06/16 19:38:58.935609 00000515 C QRY INFO  hbConnections cleanup
+06/16 19:38:58.935690 00000471 C UTL INFO  worker:taskWorkPool:0 qset:0x125805a0, got no message and exiting, thread:00000471
+06/16 19:38:58.935703 00000475 C UTL INFO  worker:taskWorkPool:4 qset:0x125805a0, got no message and exiting, thread:00000475
+06/16 19:38:58.935717 00000473 C UTL INFO  worker:taskWorkPool:2 qset:0x125805a0, got no message and exiting, thread:00000473
+06/16 19:38:58.935758 00000478 C UTL INFO  worker:taskWorkPool:7 qset:0x125805a0, got no message and exiting, thread:00000478
+06/16 19:38:58.935789 00000482 C UTL INFO  worker:taskWorkPool:11 qset:0x125805a0, got no message and exiting, thread:00000482
+06/16 19:38:58.935802 00000479 C UTL INFO  worker:taskWorkPool:8 qset:0x125805a0, got no message and exiting, thread:00000479
+06/16 19:38:58.935803 00000481 C UTL INFO  worker:taskWorkPool:10 qset:0x125805a0, got no message and exiting, thread:00000481
+06/16 19:38:58.935821 00000484 C UTL INFO  worker:taskWorkPool:13 qset:0x125805a0, got no message and exiting, thread:00000484
+06/16 19:38:58.935826 00000472 C UTL INFO  worker:taskWorkPool:1 qset:0x125805a0, got no message and exiting, thread:00000472
+06/16 19:38:58.935829 00000487 C UTL INFO  worker:taskWorkPool:16 qset:0x125805a0, got no message and exiting, thread:00000487
+06/16 19:38:58.935827 00000486 C UTL INFO  worker:taskWorkPool:15 qset:0x125805a0, got no message and exiting, thread:00000486
+06/16 19:38:58.935834 00000476 C UTL INFO  worker:taskWorkPool:5 qset:0x125805a0, got no message and exiting, thread:00000476
+06/16 19:38:58.935857 00000493 C UTL INFO  worker:taskWorkPool:22 qset:0x125805a0, got no message and exiting, thread:00000493
+06/16 19:38:58.935900 00000488 C UTL INFO  worker:taskWorkPool:17 qset:0x125805a0, got no message and exiting, thread:00000488
+06/16 19:38:58.935964 00000477 C UTL INFO  worker:taskWorkPool:6 qset:0x125805a0, got no message and exiting, thread:00000477
+06/16 19:38:58.937525 00000483 C UTL INFO  worker:taskWorkPool:12 qset:0x125805a0, got no message and exiting, thread:00000483
+06/16 19:38:58.939358 00000494 C UTL INFO  worker:taskWorkPool:23 qset:0x125805a0, got no message and exiting, thread:00000494
+06/16 19:38:58.939610 00000498 C UTL INFO  worker:taskWorkPool:27 qset:0x125805a0, got no message and exiting, thread:00000498
+06/16 19:38:58.942488 00000485 C UTL INFO  worker:taskWorkPool:14 qset:0x125805a0, got no message and exiting, thread:00000485
+06/16 19:38:58.944132 00000502 C UTL INFO  worker:taskWorkPool:31 qset:0x125805a0, got no message and exiting, thread:00000502
+06/16 19:38:58.947325 00000497 C UTL INFO  worker:taskWorkPool:26 qset:0x125805a0, got no message and exiting, thread:00000497
+06/16 19:38:58.954797 00000474 C UTL INFO  worker:taskWorkPool:3 qset:0x125805a0, got no message and exiting, thread:00000474
+06/16 19:38:58.954901 00000489 C UTL INFO  worker:taskWorkPool:18 qset:0x125805a0, got no message and exiting, thread:00000489
+06/16 19:38:58.954904 00000492 C UTL INFO  worker:taskWorkPool:21 qset:0x125805a0, got no message and exiting, thread:00000492
+06/16 19:38:58.954901 00000499 C UTL INFO  worker:taskWorkPool:28 qset:0x125805a0, got no message and exiting, thread:00000499
+06/16 19:38:58.954897 00000495 C UTL INFO  worker:taskWorkPool:24 qset:0x125805a0, got no message and exiting, thread:00000495
+06/16 19:38:58.954903 00000491 C UTL INFO  worker:taskWorkPool:20 qset:0x125805a0, got no message and exiting, thread:00000491
+06/16 19:38:58.954915 00000500 C UTL INFO  worker:taskWorkPool:29 qset:0x125805a0, got no message and exiting, thread:00000500
+06/16 19:38:58.954927 00000480 C UTL INFO  worker:taskWorkPool:9 qset:0x125805a0, got no message and exiting, thread:00000480
+06/16 19:38:58.955248 00000490 C UTL INFO  worker:taskWorkPool:19 qset:0x125805a0, got no message and exiting, thread:00000490
+06/16 19:38:58.955301 00000501 C UTL INFO  worker:taskWorkPool:30 qset:0x125805a0, got no message and exiting, thread:00000501
+06/16 19:38:58.955307 00000496 C UTL INFO  worker:taskWorkPool:25 qset:0x125805a0, got no message and exiting, thread:00000496
+06/16 19:38:58.956546 00000515 C TSC INFO  destroy app inst mgr 0x125a2000
+06/16 19:38:58.956557 00000515 C RPC INFO  start to close rpc
+06/16 19:38:58.959439 00000515 C RPC INFO  end to close rpc
+06/16 19:38:58.959447 00000515 C TSC INFO  cluster instance map cleaned
+06/16 19:38:58.959492 00000515 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:38:58.959557 00000515 C UTL INFO  [regex cache] destory regex cache
+06/16 19:38:58.959561 00000515 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:40:32.813653 00000538 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:40:32.813660 00000538 C UTL INFO  env file:.env not load
+06/16 19:40:32.813664 00000538 C UTL INFO  load from env variables cfg success
+06/16 19:40:32.813721 00000538 C UTL INFO                       global config
+06/16 19:40:32.813723 00000538 C UTL INFO  =================================================================
+06/16 19:40:32.813725 00000538 C UTL INFO  default      forceReadConfig                  0
+06/16 19:40:32.813726 00000538 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:40:32.813726 00000538 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:40:32.813727 00000538 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:40:32.813728 00000538 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:40:32.813731 00000538 C UTL INFO  default      queryPolicy                      1
+06/16 19:40:32.813732 00000538 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:40:32.813733 00000538 C UTL INFO  default      enableQueryHb                    1
+06/16 19:40:32.813733 00000538 C UTL INFO  default      enableScience                    0
+06/16 19:40:32.813734 00000538 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:40:32.813734 00000538 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:40:32.813736 00000538 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:40:32.813737 00000538 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:40:32.813737 00000538 C UTL INFO  default      keepColumnName                   0
+06/16 19:40:32.813738 00000538 C UTL INFO  default      smlChildTableName                
+06/16 19:40:32.813739 00000538 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:40:32.813739 00000538 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:40:32.813740 00000538 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:40:32.813740 00000538 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:40:32.813741 00000538 C UTL INFO  default      minSlidingTime                   1
+06/16 19:40:32.813742 00000538 C UTL INFO  default      minIntervalTime                  1
+06/16 19:40:32.813742 00000538 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:40:32.813743 00000538 C UTL INFO  default      useAdapter                       0
+06/16 19:40:32.813743 00000538 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:40:32.813744 00000538 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:40:32.813745 00000538 C UTL INFO  default      bypassFlag                       0
+06/16 19:40:32.813745 00000538 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:40:32.813746 00000538 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:40:32.813746 00000538 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:40:32.813747 00000538 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:40:32.813748 00000538 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:40:32.813748 00000538 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:40:32.813749 00000538 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:40:32.813749 00000538 C UTL INFO  default      streamCoverage                   0
+06/16 19:40:32.813750 00000538 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:40:32.813750 00000538 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:40:32.813751 00000538 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:40:32.813752 00000538 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:40:32.813752 00000538 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:40:32.813753 00000538 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:40:32.813759 00000538 C UTL INFO  default      asyncLog                         1
+06/16 19:40:32.813760 00000538 C UTL INFO  default      logKeepDays                      0
+06/16 19:40:32.813761 00000538 C UTL INFO  default      debugFlag                        0
+06/16 19:40:32.813761 00000538 C UTL INFO  default      simDebugFlag                     131
+06/16 19:40:32.813762 00000538 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:40:32.813762 00000538 C UTL INFO  default      uDebugFlag                       131
+06/16 19:40:32.813763 00000538 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:40:32.813764 00000538 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:40:32.813764 00000538 C UTL INFO  default      qDebugFlag                       131
+06/16 19:40:32.813765 00000538 C UTL INFO  default      cDebugFlag                       131
+06/16 19:40:32.813765 00000538 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:40:32.813766 00000538 C UTL INFO  default      numOfCores                       16.00
+06/16 19:40:32.813768 00000538 C UTL INFO  default      simdEnable                       1
+06/16 19:40:32.813768 00000538 C UTL INFO  default      AVX512Enable                     0
+06/16 19:40:32.813769 00000538 C UTL INFO  default      tagFilterCache                   0
+06/16 19:40:32.813769 00000538 C UTL INFO  default      openMax                          1048576
+06/16 19:40:32.813770 00000538 C UTL INFO  default      streamMax                        16
+06/16 19:40:32.813771 00000538 C UTL INFO  default      pageSizeKB                       4
+06/16 19:40:32.813771 00000538 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:40:32.813772 00000538 C UTL INFO  default      os sysname                       Linux
+06/16 19:40:32.813772 00000538 C UTL INFO  default      os nodename                      tdengine
+06/16 19:40:32.813773 00000538 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:40:32.813774 00000538 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:40:32.813774 00000538 C UTL INFO  default      os machine                       x86_64
+06/16 19:40:32.813775 00000538 C UTL INFO  default      version                          3.3.6.6
+06/16 19:40:32.813775 00000538 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:40:32.813776 00000538 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:40:32.813777 00000538 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:40:32.813777 00000538 C UTL INFO  =================================================================
+06/16 19:40:32.813778 00000538 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:40:32.814110 00000538 C TSC INFO  monitor init
+06/16 19:40:32.814305 00000545 C UTL INFO  scheduler tmr-taskQ is started, thread:545
+06/16 19:40:32.814365 00000546 C UTL INFO  scheduler high-tmr-taskQ is started, thread:546
+06/16 19:40:32.814501 00000548 C TSC INFO  monitor update thread started
+06/16 19:40:32.814576 00000538 C TSC INFO  starting to initialize TAOS driver
+06/16 19:40:32.814587 00000538 C QRY INFO  catalog init
+06/16 19:40:32.814656 00000538 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:40:32.814664 00000538 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:40:32.814689 00000538 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:40:32.814687 00000549 C QRY INFO  catalog update thread started
+06/16 19:40:32.814720 00000538 C QRY INFO  generate clientId:6343620859216640612
+06/16 19:40:32.814801 00000538 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:40:32.814846 00000538 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:40:32.814900 00000538 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:40:32.814947 00000538 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:40:32.815000 00000538 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:40:32.815060 00000538 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:40:32.815125 00000538 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:40:32.815175 00000538 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:40:32.815222 00000538 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:40:32.815272 00000538 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:40:32.815315 00000538 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:40:32.815362 00000538 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:40:32.815411 00000538 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:40:32.815472 00000538 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:40:32.815519 00000538 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:40:32.815570 00000538 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:40:32.815621 00000538 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:40:32.815672 00000538 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:40:32.815735 00000538 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:40:32.815788 00000538 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:40:32.815852 00000538 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:40:32.815907 00000538 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:40:32.815955 00000538 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:40:32.816005 00000538 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:40:32.816049 00000538 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:40:32.816102 00000538 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:40:32.816150 00000538 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:40:32.816196 00000538 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:40:32.816239 00000538 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:40:32.816306 00000538 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:40:32.816349 00000538 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:40:32.816392 00000538 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:40:32.816395 00000538 C UTL INFO  worker:taskWorkPool, queue:0x1501f6c0 is allocated, ahandle:(nil)
+06/16 19:40:32.816397 00000538 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:40:32.816651 00000582 C TSC INFO  no crash info was found
+06/16 19:40:32.816664 00000538 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:40:32.816885 00000538 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:40:32.816971 00000538 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:40:32.816973 00000538 C TSC INFO  ep:0, tdengine:6030
+06/16 19:40:32.816973 00000538 C TSC INFO  ep:1, tdengine:6030
+06/16 19:40:32.818279 00000538 C TSC INFO  app initialized, appId:0x737a3788a8200001
+06/16 19:40:32.818354 00000538 C TSC INFO  new app inst mgr:0x15041000, user:root, ip:tdengine, port:6030
+06/16 19:40:32.818363 00000538 C TSC INFO  conn:0x2, created, p:0x150f57f0
+06/16 19:40:32.819319 00000551 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:40:32.819368 00000551 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x77a6e8000fa0
+06/16 19:40:32.819380 00000551 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x77a6e8000fa0, create counter:taos_slow_sql:count 0x77a6e8003330
+06/16 19:40:32.819388 00000551 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x77a6e8000fa0, create counter:taos_sql_req:count 0x77a6e8003df0
+06/16 19:40:32.819450 00000538 C TSC INFO  conn:0x2, connection is opening, connId:2965032122, dnodeConn:0x2, QID:0x87a21a8a82b20001
+06/16 19:40:32.823849 00000554 C QRY INFO  QID:0x87a21a8a82b50003 init with pTrans:0x2
+06/16 19:40:32.823933 00000554 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:40:32.824760 00000556 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:40:32.825918 00000538 C QRY INFO  QID:0x87a21a8a82b50003, SID:1, CID:0x5809118fbf5dba64, TID:0x1, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:40:32.828892 00000561 C QRY INFO  QID:0x87a21a8a82ba0004 init with pTrans:0x2
+06/16 19:40:32.830521 00000564 C QRY INFO  QID:0x87a21a8a82be0005 init with pTrans:0x2
+06/16 19:40:32.830575 00000564 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:40:32.831029 00000565 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x4
+06/16 19:40:32.833196 00000538 C QRY INFO  QID:0x87a21a8a82be0005, SID:1, CID:0x5809118fbf5dba64, TID:0x3, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:40:32.833381 00000538 C TSC INFO  start to cleanup client environment
+06/16 19:40:32.833386 00000538 C TSC INFO  monitor close
+06/16 19:40:32.919865 00000548 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:40:33.020249 00000538 C QRY INFO  start to destroy catalog
+06/16 19:40:33.020450 00000549 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x150fb5d0
+06/16 19:40:33.020479 00000549 C QRY INFO  catalog update thread stopped
+06/16 19:40:33.020513 00000538 C QRY INFO  catalog destroyed
+06/16 19:40:33.020539 00000538 C QRY INFO  hbConnections cleanup
+06/16 19:40:33.020652 00000571 C UTL INFO  worker:taskWorkPool:21 qset:0x1501f5a0, got no message and exiting, thread:00000571
+06/16 19:40:33.020631 00000570 C UTL INFO  worker:taskWorkPool:20 qset:0x1501f5a0, got no message and exiting, thread:00000570
+06/16 19:40:33.020735 00000552 C UTL INFO  worker:taskWorkPool:2 qset:0x1501f5a0, got no message and exiting, thread:00000552
+06/16 19:40:33.020802 00000555 C UTL INFO  worker:taskWorkPool:5 qset:0x1501f5a0, got no message and exiting, thread:00000555
+06/16 19:40:33.020875 00000553 C UTL INFO  worker:taskWorkPool:3 qset:0x1501f5a0, got no message and exiting, thread:00000553
+06/16 19:40:33.020924 00000561 C UTL INFO  worker:taskWorkPool:11 qset:0x1501f5a0, got no message and exiting, thread:00000561
+06/16 19:40:33.020938 00000572 C UTL INFO  worker:taskWorkPool:22 qset:0x1501f5a0, got no message and exiting, thread:00000572
+06/16 19:40:33.021138 00000556 C UTL INFO  worker:taskWorkPool:6 qset:0x1501f5a0, got no message and exiting, thread:00000556
+06/16 19:40:33.021492 00000566 C UTL INFO  worker:taskWorkPool:16 qset:0x1501f5a0, got no message and exiting, thread:00000566
+06/16 19:40:33.021562 00000563 C UTL INFO  worker:taskWorkPool:13 qset:0x1501f5a0, got no message and exiting, thread:00000563
+06/16 19:40:33.021569 00000554 C UTL INFO  worker:taskWorkPool:4 qset:0x1501f5a0, got no message and exiting, thread:00000554
+06/16 19:40:33.021572 00000559 C UTL INFO  worker:taskWorkPool:9 qset:0x1501f5a0, got no message and exiting, thread:00000559
+06/16 19:40:33.021610 00000565 C UTL INFO  worker:taskWorkPool:15 qset:0x1501f5a0, got no message and exiting, thread:00000565
+06/16 19:40:33.021657 00000574 C UTL INFO  worker:taskWorkPool:24 qset:0x1501f5a0, got no message and exiting, thread:00000574
+06/16 19:40:33.021655 00000573 C UTL INFO  worker:taskWorkPool:23 qset:0x1501f5a0, got no message and exiting, thread:00000573
+06/16 19:40:33.021664 00000569 C UTL INFO  worker:taskWorkPool:19 qset:0x1501f5a0, got no message and exiting, thread:00000569
+06/16 19:40:33.021685 00000550 C UTL INFO  worker:taskWorkPool:0 qset:0x1501f5a0, got no message and exiting, thread:00000550
+06/16 19:40:33.021687 00000560 C UTL INFO  worker:taskWorkPool:10 qset:0x1501f5a0, got no message and exiting, thread:00000560
+06/16 19:40:33.021672 00000575 C UTL INFO  worker:taskWorkPool:25 qset:0x1501f5a0, got no message and exiting, thread:00000575
+06/16 19:40:33.021688 00000576 C UTL INFO  worker:taskWorkPool:26 qset:0x1501f5a0, got no message and exiting, thread:00000576
+06/16 19:40:33.021691 00000577 C UTL INFO  worker:taskWorkPool:27 qset:0x1501f5a0, got no message and exiting, thread:00000577
+06/16 19:40:33.021709 00000580 C UTL INFO  worker:taskWorkPool:30 qset:0x1501f5a0, got no message and exiting, thread:00000580
+06/16 19:40:33.021707 00000579 C UTL INFO  worker:taskWorkPool:29 qset:0x1501f5a0, got no message and exiting, thread:00000579
+06/16 19:40:33.021717 00000581 C UTL INFO  worker:taskWorkPool:31 qset:0x1501f5a0, got no message and exiting, thread:00000581
+06/16 19:40:33.021728 00000564 C UTL INFO  worker:taskWorkPool:14 qset:0x1501f5a0, got no message and exiting, thread:00000564
+06/16 19:40:33.021725 00000558 C UTL INFO  worker:taskWorkPool:8 qset:0x1501f5a0, got no message and exiting, thread:00000558
+06/16 19:40:33.021729 00000551 C UTL INFO  worker:taskWorkPool:1 qset:0x1501f5a0, got no message and exiting, thread:00000551
+06/16 19:40:33.021736 00000562 C UTL INFO  worker:taskWorkPool:12 qset:0x1501f5a0, got no message and exiting, thread:00000562
+06/16 19:40:33.021756 00000557 C UTL INFO  worker:taskWorkPool:7 qset:0x1501f5a0, got no message and exiting, thread:00000557
+06/16 19:40:33.021755 00000567 C UTL INFO  worker:taskWorkPool:17 qset:0x1501f5a0, got no message and exiting, thread:00000567
+06/16 19:40:33.021789 00000568 C UTL INFO  worker:taskWorkPool:18 qset:0x1501f5a0, got no message and exiting, thread:00000568
+06/16 19:40:33.021688 00000578 C UTL INFO  worker:taskWorkPool:28 qset:0x1501f5a0, got no message and exiting, thread:00000578
+06/16 19:40:33.022638 00000538 C TSC INFO  destroy app inst mgr 0x15041000
+06/16 19:40:33.022645 00000538 C RPC INFO  start to close rpc
+06/16 19:40:33.024782 00000538 C RPC INFO  end to close rpc
+06/16 19:40:33.024790 00000538 C TSC INFO  cluster instance map cleaned
+06/16 19:40:33.024934 00000538 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:40:33.024978 00000538 C UTL INFO  [regex cache] destory regex cache
+06/16 19:40:33.024985 00000538 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:42:07.256305 00000592 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:42:07.256316 00000592 C UTL INFO  env file:.env not load
+06/16 19:42:07.256321 00000592 C UTL INFO  load from env variables cfg success
+06/16 19:42:07.256406 00000592 C UTL INFO                       global config
+06/16 19:42:07.256408 00000592 C UTL INFO  =================================================================
+06/16 19:42:07.256410 00000592 C UTL INFO  default      forceReadConfig                  0
+06/16 19:42:07.256472 00000592 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:42:07.256475 00000592 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:42:07.256476 00000592 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:42:07.256477 00000592 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:42:07.256480 00000592 C UTL INFO  default      queryPolicy                      1
+06/16 19:42:07.256481 00000592 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:42:07.256482 00000592 C UTL INFO  default      enableQueryHb                    1
+06/16 19:42:07.256483 00000592 C UTL INFO  default      enableScience                    0
+06/16 19:42:07.256483 00000592 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:42:07.256484 00000592 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:42:07.256485 00000592 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:42:07.256486 00000592 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:42:07.256486 00000592 C UTL INFO  default      keepColumnName                   0
+06/16 19:42:07.256487 00000592 C UTL INFO  default      smlChildTableName                
+06/16 19:42:07.256488 00000592 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:42:07.256489 00000592 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:42:07.256489 00000592 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:42:07.256490 00000592 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:42:07.256491 00000592 C UTL INFO  default      minSlidingTime                   1
+06/16 19:42:07.256492 00000592 C UTL INFO  default      minIntervalTime                  1
+06/16 19:42:07.256492 00000592 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:42:07.256493 00000592 C UTL INFO  default      useAdapter                       0
+06/16 19:42:07.256494 00000592 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:42:07.256495 00000592 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:42:07.256495 00000592 C UTL INFO  default      bypassFlag                       0
+06/16 19:42:07.256496 00000592 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:42:07.256497 00000592 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:42:07.256497 00000592 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:42:07.256498 00000592 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:42:07.256499 00000592 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:42:07.256499 00000592 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:42:07.256500 00000592 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:42:07.256501 00000592 C UTL INFO  default      streamCoverage                   0
+06/16 19:42:07.256502 00000592 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:42:07.256502 00000592 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:42:07.256503 00000592 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:42:07.256504 00000592 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:42:07.256505 00000592 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:42:07.256505 00000592 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:42:07.256513 00000592 C UTL INFO  default      asyncLog                         1
+06/16 19:42:07.256515 00000592 C UTL INFO  default      logKeepDays                      0
+06/16 19:42:07.256516 00000592 C UTL INFO  default      debugFlag                        0
+06/16 19:42:07.256517 00000592 C UTL INFO  default      simDebugFlag                     131
+06/16 19:42:07.256517 00000592 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:42:07.256518 00000592 C UTL INFO  default      uDebugFlag                       131
+06/16 19:42:07.256519 00000592 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:42:07.256519 00000592 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:42:07.256520 00000592 C UTL INFO  default      qDebugFlag                       131
+06/16 19:42:07.256521 00000592 C UTL INFO  default      cDebugFlag                       131
+06/16 19:42:07.256521 00000592 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:42:07.256522 00000592 C UTL INFO  default      numOfCores                       16.00
+06/16 19:42:07.256524 00000592 C UTL INFO  default      simdEnable                       1
+06/16 19:42:07.256525 00000592 C UTL INFO  default      AVX512Enable                     0
+06/16 19:42:07.256526 00000592 C UTL INFO  default      tagFilterCache                   0
+06/16 19:42:07.256526 00000592 C UTL INFO  default      openMax                          1048576
+06/16 19:42:07.256527 00000592 C UTL INFO  default      streamMax                        16
+06/16 19:42:07.256528 00000592 C UTL INFO  default      pageSizeKB                       4
+06/16 19:42:07.256528 00000592 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:42:07.256529 00000592 C UTL INFO  default      os sysname                       Linux
+06/16 19:42:07.256530 00000592 C UTL INFO  default      os nodename                      tdengine
+06/16 19:42:07.256531 00000592 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:42:07.256531 00000592 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:42:07.256532 00000592 C UTL INFO  default      os machine                       x86_64
+06/16 19:42:07.256533 00000592 C UTL INFO  default      version                          3.3.6.6
+06/16 19:42:07.256533 00000592 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:42:07.256534 00000592 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:42:07.256535 00000592 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:42:07.256535 00000592 C UTL INFO  =================================================================
+06/16 19:42:07.256536 00000592 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:42:07.256901 00000592 C TSC INFO  monitor init
+06/16 19:42:07.257206 00000599 C UTL INFO  scheduler tmr-taskQ is started, thread:599
+06/16 19:42:07.257176 00000600 C UTL INFO  scheduler high-tmr-taskQ is started, thread:600
+06/16 19:42:07.257281 00000602 C TSC INFO  monitor update thread started
+06/16 19:42:07.257404 00000592 C TSC INFO  starting to initialize TAOS driver
+06/16 19:42:07.257412 00000592 C QRY INFO  catalog init
+06/16 19:42:07.257482 00000592 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:42:07.257490 00000592 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:42:07.257503 00000603 C QRY INFO  catalog update thread started
+06/16 19:42:07.257515 00000592 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:42:07.257555 00000592 C QRY INFO  generate clientId:2474557517398459296
+06/16 19:42:07.257630 00000592 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:42:07.257683 00000592 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:42:07.257736 00000592 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:42:07.257786 00000592 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:42:07.257838 00000592 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:42:07.257890 00000592 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:42:07.257938 00000592 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:42:07.257993 00000592 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:42:07.258038 00000592 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:42:07.258121 00000592 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:42:07.258174 00000592 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:42:07.258223 00000592 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:42:07.258286 00000592 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:42:07.258342 00000592 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:42:07.258408 00000592 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:42:07.258459 00000592 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:42:07.258529 00000592 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:42:07.258585 00000592 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:42:07.258631 00000592 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:42:07.258682 00000592 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:42:07.258730 00000592 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:42:07.258804 00000592 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:42:07.258850 00000592 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:42:07.258894 00000592 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:42:07.258935 00000592 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:42:07.258988 00000592 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:42:07.259031 00000592 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:42:07.259079 00000592 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:42:07.259137 00000592 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:42:07.259182 00000592 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:42:07.259229 00000592 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:42:07.259296 00000592 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:42:07.259301 00000592 C UTL INFO  worker:taskWorkPool, queue:0x50c86c0 is allocated, ahandle:(nil)
+06/16 19:42:07.259303 00000592 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:42:07.259605 00000636 C TSC INFO  no crash info was found
+06/16 19:42:07.259618 00000592 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:42:07.259821 00000592 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:42:07.259907 00000592 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:42:07.259909 00000592 C TSC INFO  ep:0, tdengine:6030
+06/16 19:42:07.259910 00000592 C TSC INFO  ep:1, tdengine:6030
+06/16 19:42:07.261854 00000592 C TSC INFO  app initialized, appId:0x47903788bf300001
+06/16 19:42:07.261929 00000592 C TSC INFO  new app inst mgr:0x50ea000, user:root, ip:tdengine, port:6030
+06/16 19:42:07.261938 00000592 C TSC INFO  conn:0x2, created, p:0x519e7f0
+06/16 19:42:07.263170 00000604 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:42:07.263228 00000604 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x799154000fa0
+06/16 19:42:07.263241 00000604 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x799154000fa0, create counter:taos_slow_sql:count 0x799154003330
+06/16 19:42:07.263251 00000604 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x799154000fa0, create counter:taos_sql_req:count 0x799154003df0
+06/16 19:42:07.263299 00000592 C TSC INFO  conn:0x2, connection is opening, connId:1974914217, dnodeConn:0x2, QID:0xe3e2508bf39d0001
+06/16 19:42:07.268554 00000610 C QRY INFO  QID:0xe3e2508bf3a10003 init with pTrans:0x2
+06/16 19:42:07.268654 00000610 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:42:07.269797 00000611 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:42:07.271233 00000592 C QRY INFO  QID:0xe3e2508bf3a10003, SID:1, CID:0x225764f388cec3a0, TID:0x1, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:42:07.272833 00000616 C QRY INFO  QID:0xe3e2508bf3a70004 init with pTrans:0x2
+06/16 19:42:07.272887 00000616 C QRY INFO  pTrans 0x2 add to hbConnections for epId:3
+06/16 19:42:07.273311 00000618 C QRY INFO  hb connection updated, nodeId:3, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x4
+06/16 19:42:07.274640 00000592 C QRY INFO  QID:0xe3e2508bf3a70004, SID:1, CID:0x225764f388cec3a0, TID:0x2, EID:0, hb mark removed from hbConnections, epId:3
+06/16 19:42:07.274771 00000592 C TSC INFO  start to cleanup client environment
+06/16 19:42:07.274775 00000592 C TSC INFO  monitor close
+06/16 19:42:07.363410 00000602 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:42:07.463702 00000592 C QRY INFO  start to destroy catalog
+06/16 19:42:07.463786 00000603 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x51a45d0
+06/16 19:42:07.463803 00000603 C QRY INFO  catalog update thread stopped
+06/16 19:42:07.463825 00000592 C QRY INFO  catalog destroyed
+06/16 19:42:07.463840 00000592 C QRY INFO  hbConnections cleanup
+06/16 19:42:07.463893 00000623 C UTL INFO  worker:taskWorkPool:19 qset:0x50c85a0, got no message and exiting, thread:00000623
+06/16 19:42:07.463927 00000625 C UTL INFO  worker:taskWorkPool:21 qset:0x50c85a0, got no message and exiting, thread:00000625
+06/16 19:42:07.463953 00000632 C UTL INFO  worker:taskWorkPool:28 qset:0x50c85a0, got no message and exiting, thread:00000632
+06/16 19:42:07.463966 00000633 C UTL INFO  worker:taskWorkPool:29 qset:0x50c85a0, got no message and exiting, thread:00000633
+06/16 19:42:07.463979 00000634 C UTL INFO  worker:taskWorkPool:30 qset:0x50c85a0, got no message and exiting, thread:00000634
+06/16 19:42:07.464003 00000635 C UTL INFO  worker:taskWorkPool:31 qset:0x50c85a0, got no message and exiting, thread:00000635
+06/16 19:42:07.464015 00000626 C UTL INFO  worker:taskWorkPool:22 qset:0x50c85a0, got no message and exiting, thread:00000626
+06/16 19:42:07.464012 00000628 C UTL INFO  worker:taskWorkPool:24 qset:0x50c85a0, got no message and exiting, thread:00000628
+06/16 19:42:07.464027 00000629 C UTL INFO  worker:taskWorkPool:25 qset:0x50c85a0, got no message and exiting, thread:00000629
+06/16 19:42:07.464074 00000630 C UTL INFO  worker:taskWorkPool:26 qset:0x50c85a0, got no message and exiting, thread:00000630
+06/16 19:42:07.464083 00000610 C UTL INFO  worker:taskWorkPool:6 qset:0x50c85a0, got no message and exiting, thread:00000610
+06/16 19:42:07.464089 00000615 C UTL INFO  worker:taskWorkPool:11 qset:0x50c85a0, got no message and exiting, thread:00000615
+06/16 19:42:07.464087 00000631 C UTL INFO  worker:taskWorkPool:27 qset:0x50c85a0, got no message and exiting, thread:00000631
+06/16 19:42:07.464093 00000624 C UTL INFO  worker:taskWorkPool:20 qset:0x50c85a0, got no message and exiting, thread:00000624
+06/16 19:42:07.464109 00000617 C UTL INFO  worker:taskWorkPool:13 qset:0x50c85a0, got no message and exiting, thread:00000617
+06/16 19:42:07.464113 00000613 C UTL INFO  worker:taskWorkPool:9 qset:0x50c85a0, got no message and exiting, thread:00000613
+06/16 19:42:07.464126 00000619 C UTL INFO  worker:taskWorkPool:15 qset:0x50c85a0, got no message and exiting, thread:00000619
+06/16 19:42:07.464132 00000604 C UTL INFO  worker:taskWorkPool:0 qset:0x50c85a0, got no message and exiting, thread:00000604
+06/16 19:42:07.464133 00000627 C UTL INFO  worker:taskWorkPool:23 qset:0x50c85a0, got no message and exiting, thread:00000627
+06/16 19:42:07.464187 00000605 C UTL INFO  worker:taskWorkPool:1 qset:0x50c85a0, got no message and exiting, thread:00000605
+06/16 19:42:07.464205 00000612 C UTL INFO  worker:taskWorkPool:8 qset:0x50c85a0, got no message and exiting, thread:00000612
+06/16 19:42:07.464235 00000607 C UTL INFO  worker:taskWorkPool:3 qset:0x50c85a0, got no message and exiting, thread:00000607
+06/16 19:42:07.467004 00000611 C UTL INFO  worker:taskWorkPool:7 qset:0x50c85a0, got no message and exiting, thread:00000611
+06/16 19:42:07.469726 00000609 C UTL INFO  worker:taskWorkPool:5 qset:0x50c85a0, got no message and exiting, thread:00000609
+06/16 19:42:07.478828 00000620 C UTL INFO  worker:taskWorkPool:16 qset:0x50c85a0, got no message and exiting, thread:00000620
+06/16 19:42:07.478829 00000622 C UTL INFO  worker:taskWorkPool:18 qset:0x50c85a0, got no message and exiting, thread:00000622
+06/16 19:42:07.478839 00000616 C UTL INFO  worker:taskWorkPool:12 qset:0x50c85a0, got no message and exiting, thread:00000616
+06/16 19:42:07.478843 00000614 C UTL INFO  worker:taskWorkPool:10 qset:0x50c85a0, got no message and exiting, thread:00000614
+06/16 19:42:07.464192 00000606 C UTL INFO  worker:taskWorkPool:2 qset:0x50c85a0, got no message and exiting, thread:00000606
+06/16 19:42:07.486694 00000621 C UTL INFO  worker:taskWorkPool:17 qset:0x50c85a0, got no message and exiting, thread:00000621
+06/16 19:42:07.499431 00000618 C UTL INFO  worker:taskWorkPool:14 qset:0x50c85a0, got no message and exiting, thread:00000618
+06/16 19:42:07.499440 00000608 C UTL INFO  worker:taskWorkPool:4 qset:0x50c85a0, got no message and exiting, thread:00000608
+06/16 19:42:07.500726 00000592 C TSC INFO  destroy app inst mgr 0x50ea000
+06/16 19:42:07.500733 00000592 C RPC INFO  start to close rpc
+06/16 19:42:07.503967 00000592 C RPC INFO  end to close rpc
+06/16 19:42:07.503973 00000592 C TSC INFO  cluster instance map cleaned
+06/16 19:42:07.504095 00000592 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:42:07.504149 00000592 C UTL INFO  [regex cache] destory regex cache
+06/16 19:42:07.504153 00000592 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:48:31.981337 00000688 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:48:31.981346 00000688 C UTL INFO  env file:.env not load
+06/16 19:48:31.981351 00000688 C UTL INFO  load from env variables cfg success
+06/16 19:48:31.981414 00000688 C UTL INFO                       global config
+06/16 19:48:31.981416 00000688 C UTL INFO  =================================================================
+06/16 19:48:31.981419 00000688 C UTL INFO  default      forceReadConfig                  0
+06/16 19:48:31.981420 00000688 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:48:31.981421 00000688 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:48:31.981422 00000688 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:48:31.981422 00000688 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:48:31.981427 00000688 C UTL INFO  default      queryPolicy                      1
+06/16 19:48:31.981428 00000688 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:48:31.981428 00000688 C UTL INFO  default      enableQueryHb                    1
+06/16 19:48:31.981429 00000688 C UTL INFO  default      enableScience                    0
+06/16 19:48:31.981430 00000688 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:48:31.981431 00000688 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:48:31.981431 00000688 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:48:31.981432 00000688 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:48:31.981433 00000688 C UTL INFO  default      keepColumnName                   0
+06/16 19:48:31.981434 00000688 C UTL INFO  default      smlChildTableName                
+06/16 19:48:31.981435 00000688 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:48:31.981435 00000688 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:48:31.981436 00000688 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:48:31.981437 00000688 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:48:31.981438 00000688 C UTL INFO  default      minSlidingTime                   1
+06/16 19:48:31.981439 00000688 C UTL INFO  default      minIntervalTime                  1
+06/16 19:48:31.981439 00000688 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:48:31.981440 00000688 C UTL INFO  default      useAdapter                       0
+06/16 19:48:31.981441 00000688 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:48:31.981442 00000688 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:48:31.981443 00000688 C UTL INFO  default      bypassFlag                       0
+06/16 19:48:31.981443 00000688 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:48:31.981444 00000688 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:48:31.981445 00000688 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:48:31.981446 00000688 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:48:31.981446 00000688 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:48:31.981447 00000688 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:48:31.981448 00000688 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:48:31.981449 00000688 C UTL INFO  default      streamCoverage                   0
+06/16 19:48:31.981449 00000688 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:48:31.981450 00000688 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:48:31.981451 00000688 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:48:31.981452 00000688 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:48:31.981453 00000688 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:48:31.981454 00000688 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:48:31.981461 00000688 C UTL INFO  default      asyncLog                         1
+06/16 19:48:31.981463 00000688 C UTL INFO  default      logKeepDays                      0
+06/16 19:48:31.981463 00000688 C UTL INFO  default      debugFlag                        0
+06/16 19:48:31.981464 00000688 C UTL INFO  default      simDebugFlag                     131
+06/16 19:48:31.981465 00000688 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:48:31.981466 00000688 C UTL INFO  default      uDebugFlag                       131
+06/16 19:48:31.981466 00000688 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:48:31.981467 00000688 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:48:31.981468 00000688 C UTL INFO  default      qDebugFlag                       131
+06/16 19:48:31.981468 00000688 C UTL INFO  default      cDebugFlag                       131
+06/16 19:48:31.981469 00000688 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:48:31.981470 00000688 C UTL INFO  default      numOfCores                       16.00
+06/16 19:48:31.981472 00000688 C UTL INFO  default      simdEnable                       1
+06/16 19:48:31.981473 00000688 C UTL INFO  default      AVX512Enable                     0
+06/16 19:48:31.981474 00000688 C UTL INFO  default      tagFilterCache                   0
+06/16 19:48:31.981475 00000688 C UTL INFO  default      openMax                          1048576
+06/16 19:48:31.981476 00000688 C UTL INFO  default      streamMax                        16
+06/16 19:48:31.981476 00000688 C UTL INFO  default      pageSizeKB                       4
+06/16 19:48:31.981477 00000688 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:48:31.981478 00000688 C UTL INFO  default      os sysname                       Linux
+06/16 19:48:31.981479 00000688 C UTL INFO  default      os nodename                      tdengine
+06/16 19:48:31.981479 00000688 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:48:31.981480 00000688 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:48:31.981481 00000688 C UTL INFO  default      os machine                       x86_64
+06/16 19:48:31.981482 00000688 C UTL INFO  default      version                          3.3.6.6
+06/16 19:48:31.981482 00000688 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:48:31.981483 00000688 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:48:31.981484 00000688 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:48:31.981485 00000688 C UTL INFO  =================================================================
+06/16 19:48:31.981485 00000688 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:48:31.981898 00000688 C TSC INFO  monitor init
+06/16 19:48:31.982172 00000695 C UTL INFO  scheduler tmr-taskQ is started, thread:695
+06/16 19:48:31.982220 00000696 C UTL INFO  scheduler high-tmr-taskQ is started, thread:696
+06/16 19:48:31.982354 00000698 C TSC INFO  monitor update thread started
+06/16 19:48:31.982448 00000688 C TSC INFO  starting to initialize TAOS driver
+06/16 19:48:31.982457 00000688 C QRY INFO  catalog init
+06/16 19:48:31.982540 00000688 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:48:31.982548 00000688 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:48:31.982574 00000688 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:48:31.982581 00000699 C QRY INFO  catalog update thread started
+06/16 19:48:31.982611 00000688 C QRY INFO  generate clientId:8035387617245059262
+06/16 19:48:31.982703 00000688 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:48:31.982756 00000688 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:48:31.982811 00000688 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:48:31.982868 00000688 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:48:31.982920 00000688 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:48:31.982974 00000688 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:48:31.983031 00000688 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:48:31.983075 00000688 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:48:31.983116 00000688 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:48:31.983166 00000688 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:48:31.983211 00000688 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:48:31.983257 00000688 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:48:31.983337 00000688 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:48:31.983380 00000688 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:48:31.983441 00000688 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:48:31.983499 00000688 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:48:31.983551 00000688 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:48:31.983606 00000688 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:48:31.983659 00000688 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:48:31.983710 00000688 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:48:31.983759 00000688 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:48:31.983808 00000688 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:48:31.983845 00000688 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:48:31.983886 00000688 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:48:31.983938 00000688 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:48:31.983979 00000688 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:48:31.984017 00000688 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:48:31.984073 00000688 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:48:31.984119 00000688 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:48:31.984161 00000688 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:48:31.984205 00000688 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:48:31.984244 00000688 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:48:31.984246 00000688 C UTL INFO  worker:taskWorkPool, queue:0x2c566c0 is allocated, ahandle:(nil)
+06/16 19:48:31.984248 00000688 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:48:31.984525 00000732 C TSC INFO  no crash info was found
+06/16 19:48:31.984544 00000688 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:48:31.984764 00000688 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:48:31.984851 00000688 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:48:31.984852 00000688 C TSC INFO  ep:0, tdengine:6030
+06/16 19:48:31.984853 00000688 C TSC INFO  ep:1, tdengine:6030
+06/16 19:48:31.986185 00000688 C TSC INFO  app initialized, appId:0x228037891d200001
+06/16 19:48:31.986256 00000688 C TSC INFO  new app inst mgr:0x2c78000, user:root, ip:tdengine, port:6030
+06/16 19:48:31.986290 00000688 C TSC INFO  conn:0x2, created, p:0x2d2c7f0
+06/16 19:48:31.987938 00000700 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:48:31.988009 00000700 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x78f5fc000fa0
+06/16 19:48:31.988023 00000700 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x78f5fc000fa0, create counter:taos_slow_sql:count 0x78f5fc003330
+06/16 19:48:31.988033 00000700 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x78f5fc000fa0, create counter:taos_sql_req:count 0x78f5fc003df0
+06/16 19:48:31.988099 00000688 C TSC INFO  conn:0x2, connection is opening, connId:3389630376, dnodeConn:0x2, QID:0x1d82b091d2720001
+06/16 19:48:31.990146 00000701 C QRY INFO  QID:0x1d82b091d2740002 init with pTrans:0x2
+06/16 19:48:31.990238 00000701 C QRY INFO  pTrans 0x2 add to hbConnections for epId:1
+06/16 19:48:31.991033 00000703 C QRY INFO  hb connection updated, nodeId:1, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:48:32.006858 00000688 C QRY INFO  QID:0x1d82b091d2740002, SID:1, CID:0x6f836e76ee76d8be, TID:0x1, EID:0, hb mark removed from hbConnections, epId:1
+06/16 19:48:32.010997 00000710 C QRY INFO  QID:0x1d82b091d2890004 init with pTrans:0x2
+06/16 19:48:32.011123 00000710 C QRY INFO  pTrans 0x2 add to hbConnections for epId:5
+06/16 19:48:32.011156 00000712 C QRY INFO  pTrans 0x2 add to hbConnections for epId:4
+06/16 19:48:32.012102 00000715 C QRY INFO  hb connection updated, nodeId:4, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x6
+06/16 19:48:32.012135 00000714 C QRY INFO  hb connection updated, nodeId:5, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x4
+06/16 19:48:32.014432 00000688 C QRY INFO  QID:0x1d82b091d2890004, SID:1, CID:0x6f836e76ee76d8be, TID:0x3, EID:0, hb mark removed from hbConnections, epId:4
+06/16 19:48:32.014445 00000688 C QRY INFO  QID:0x1d82b091d2890004, SID:1, CID:0x6f836e76ee76d8be, TID:0x4, EID:0, hb mark removed from hbConnections, epId:5
+06/16 19:48:32.016993 00000723 C QRY INFO  QID:0x1d82b091d28e0005 init with pTrans:0x2
+06/16 19:48:32.017138 00000723 C QRY INFO  pTrans 0x2 add to hbConnections for epId:4
+06/16 19:48:32.017184 00000725 C QRY INFO  pTrans 0x2 add to hbConnections for epId:5
+06/16 19:48:32.017924 00000728 C QRY INFO  hb connection updated, nodeId:4, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x9
+06/16 19:48:32.018148 00000726 C QRY INFO  hb connection updated, nodeId:5, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0xb
+06/16 19:48:32.020712 00000688 C QRY INFO  QID:0x1d82b091d28e0005, SID:1, CID:0x6f836e76ee76d8be, TID:0x6, EID:0, hb mark removed from hbConnections, epId:4
+06/16 19:48:32.020726 00000688 C QRY INFO  QID:0x1d82b091d28e0005, SID:1, CID:0x6f836e76ee76d8be, TID:0x7, EID:0, hb mark removed from hbConnections, epId:5
+06/16 19:48:32.020881 00000688 C TSC INFO  start to cleanup client environment
+06/16 19:48:32.020885 00000688 C TSC INFO  monitor close
+06/16 19:48:32.088258 00000698 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:48:32.188553 00000688 C QRY INFO  start to destroy catalog
+06/16 19:48:32.188683 00000699 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x2d34130
+06/16 19:48:32.188708 00000699 C QRY INFO  catalog update thread stopped
+06/16 19:48:32.188754 00000688 C QRY INFO  catalog destroyed
+06/16 19:48:32.188798 00000688 C QRY INFO  hbConnections cleanup
+06/16 19:48:32.188847 00000704 C UTL INFO  worker:taskWorkPool:4 qset:0x2c565a0, got no message and exiting, thread:00000704
+06/16 19:48:32.188893 00000706 C UTL INFO  worker:taskWorkPool:6 qset:0x2c565a0, got no message and exiting, thread:00000706
+06/16 19:48:32.188928 00000705 C UTL INFO  worker:taskWorkPool:5 qset:0x2c565a0, got no message and exiting, thread:00000705
+06/16 19:48:32.188938 00000711 C UTL INFO  worker:taskWorkPool:11 qset:0x2c565a0, got no message and exiting, thread:00000711
+06/16 19:48:32.188939 00000709 C UTL INFO  worker:taskWorkPool:9 qset:0x2c565a0, got no message and exiting, thread:00000709
+06/16 19:48:32.188960 00000713 C UTL INFO  worker:taskWorkPool:13 qset:0x2c565a0, got no message and exiting, thread:00000713
+06/16 19:48:32.189010 00000715 C UTL INFO  worker:taskWorkPool:15 qset:0x2c565a0, got no message and exiting, thread:00000715
+06/16 19:48:32.189046 00000714 C UTL INFO  worker:taskWorkPool:14 qset:0x2c565a0, got no message and exiting, thread:00000714
+06/16 19:48:32.188997 00000708 C UTL INFO  worker:taskWorkPool:8 qset:0x2c565a0, got no message and exiting, thread:00000708
+06/16 19:48:32.189032 00000710 C UTL INFO  worker:taskWorkPool:10 qset:0x2c565a0, got no message and exiting, thread:00000710
+06/16 19:48:32.189086 00000719 C UTL INFO  worker:taskWorkPool:19 qset:0x2c565a0, got no message and exiting, thread:00000719
+06/16 19:48:32.189089 00000720 C UTL INFO  worker:taskWorkPool:20 qset:0x2c565a0, got no message and exiting, thread:00000720
+06/16 19:48:32.189086 00000712 C UTL INFO  worker:taskWorkPool:12 qset:0x2c565a0, got no message and exiting, thread:00000712
+06/16 19:48:32.189117 00000707 C UTL INFO  worker:taskWorkPool:7 qset:0x2c565a0, got no message and exiting, thread:00000707
+06/16 19:48:32.189123 00000716 C UTL INFO  worker:taskWorkPool:16 qset:0x2c565a0, got no message and exiting, thread:00000716
+06/16 19:48:32.189131 00000700 C UTL INFO  worker:taskWorkPool:0 qset:0x2c565a0, got no message and exiting, thread:00000700
+06/16 19:48:32.189062 00000717 C UTL INFO  worker:taskWorkPool:17 qset:0x2c565a0, got no message and exiting, thread:00000717
+06/16 19:48:32.189156 00000722 C UTL INFO  worker:taskWorkPool:22 qset:0x2c565a0, got no message and exiting, thread:00000722
+06/16 19:48:32.189153 00000721 C UTL INFO  worker:taskWorkPool:21 qset:0x2c565a0, got no message and exiting, thread:00000721
+06/16 19:48:32.189182 00000728 C UTL INFO  worker:taskWorkPool:28 qset:0x2c565a0, got no message and exiting, thread:00000728
+06/16 19:48:32.189204 00000718 C UTL INFO  worker:taskWorkPool:18 qset:0x2c565a0, got no message and exiting, thread:00000718
+06/16 19:48:32.189232 00000727 C UTL INFO  worker:taskWorkPool:27 qset:0x2c565a0, got no message and exiting, thread:00000727
+06/16 19:48:32.191765 00000723 C UTL INFO  worker:taskWorkPool:23 qset:0x2c565a0, got no message and exiting, thread:00000723
+06/16 19:48:32.192710 00000729 C UTL INFO  worker:taskWorkPool:29 qset:0x2c565a0, got no message and exiting, thread:00000729
+06/16 19:48:32.193083 00000730 C UTL INFO  worker:taskWorkPool:30 qset:0x2c565a0, got no message and exiting, thread:00000730
+06/16 19:48:32.193180 00000726 C UTL INFO  worker:taskWorkPool:26 qset:0x2c565a0, got no message and exiting, thread:00000726
+06/16 19:48:32.193633 00000724 C UTL INFO  worker:taskWorkPool:24 qset:0x2c565a0, got no message and exiting, thread:00000724
+06/16 19:48:32.193741 00000701 C UTL INFO  worker:taskWorkPool:1 qset:0x2c565a0, got no message and exiting, thread:00000701
+06/16 19:48:32.193731 00000702 C UTL INFO  worker:taskWorkPool:2 qset:0x2c565a0, got no message and exiting, thread:00000702
+06/16 19:48:32.193739 00000703 C UTL INFO  worker:taskWorkPool:3 qset:0x2c565a0, got no message and exiting, thread:00000703
+06/16 19:48:32.193872 00000725 C UTL INFO  worker:taskWorkPool:25 qset:0x2c565a0, got no message and exiting, thread:00000725
+06/16 19:48:32.194213 00000731 C UTL INFO  worker:taskWorkPool:31 qset:0x2c565a0, got no message and exiting, thread:00000731
+06/16 19:48:32.194814 00000688 C TSC INFO  destroy app inst mgr 0x2c78000
+06/16 19:48:32.194822 00000688 C RPC INFO  start to close rpc
+06/16 19:48:32.197229 00000688 C RPC INFO  end to close rpc
+06/16 19:48:32.197235 00000688 C TSC INFO  cluster instance map cleaned
+06/16 19:48:32.197341 00000688 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:48:32.197386 00000688 C UTL INFO  [regex cache] destory regex cache
+06/16 19:48:32.197391 00000688 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:54:06.218359 00000745 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:54:06.218365 00000745 C UTL INFO  env file:.env not load
+06/16 19:54:06.218369 00000745 C UTL INFO  load from env variables cfg success
+06/16 19:54:06.218420 00000745 C UTL INFO                       global config
+06/16 19:54:06.218421 00000745 C UTL INFO  =================================================================
+06/16 19:54:06.218423 00000745 C UTL INFO  default      forceReadConfig                  0
+06/16 19:54:06.218424 00000745 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:54:06.218425 00000745 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:54:06.218425 00000745 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:54:06.218426 00000745 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:54:06.218429 00000745 C UTL INFO  default      queryPolicy                      1
+06/16 19:54:06.218430 00000745 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:54:06.218431 00000745 C UTL INFO  default      enableQueryHb                    1
+06/16 19:54:06.218431 00000745 C UTL INFO  default      enableScience                    0
+06/16 19:54:06.218432 00000745 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:54:06.218433 00000745 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:54:06.218433 00000745 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:54:06.218434 00000745 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:54:06.218434 00000745 C UTL INFO  default      keepColumnName                   0
+06/16 19:54:06.218435 00000745 C UTL INFO  default      smlChildTableName                
+06/16 19:54:06.218436 00000745 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:54:06.218436 00000745 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:54:06.218437 00000745 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:54:06.218438 00000745 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:54:06.218438 00000745 C UTL INFO  default      minSlidingTime                   1
+06/16 19:54:06.218439 00000745 C UTL INFO  default      minIntervalTime                  1
+06/16 19:54:06.218440 00000745 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:54:06.218440 00000745 C UTL INFO  default      useAdapter                       0
+06/16 19:54:06.218441 00000745 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:54:06.218442 00000745 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:54:06.218442 00000745 C UTL INFO  default      bypassFlag                       0
+06/16 19:54:06.218443 00000745 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:54:06.218444 00000745 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:54:06.218444 00000745 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:54:06.218445 00000745 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:54:06.218446 00000745 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:54:06.218446 00000745 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:54:06.218447 00000745 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:54:06.218448 00000745 C UTL INFO  default      streamCoverage                   0
+06/16 19:54:06.218448 00000745 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:54:06.218449 00000745 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:54:06.218449 00000745 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:54:06.218450 00000745 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:54:06.218451 00000745 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:54:06.218452 00000745 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:54:06.218457 00000745 C UTL INFO  default      asyncLog                         1
+06/16 19:54:06.218459 00000745 C UTL INFO  default      logKeepDays                      0
+06/16 19:54:06.218460 00000745 C UTL INFO  default      debugFlag                        0
+06/16 19:54:06.218460 00000745 C UTL INFO  default      simDebugFlag                     131
+06/16 19:54:06.218461 00000745 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:54:06.218461 00000745 C UTL INFO  default      uDebugFlag                       131
+06/16 19:54:06.218462 00000745 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:54:06.218463 00000745 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:54:06.218463 00000745 C UTL INFO  default      qDebugFlag                       131
+06/16 19:54:06.218464 00000745 C UTL INFO  default      cDebugFlag                       131
+06/16 19:54:06.218464 00000745 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:54:06.218465 00000745 C UTL INFO  default      numOfCores                       16.00
+06/16 19:54:06.218467 00000745 C UTL INFO  default      simdEnable                       1
+06/16 19:54:06.218467 00000745 C UTL INFO  default      AVX512Enable                     0
+06/16 19:54:06.218468 00000745 C UTL INFO  default      tagFilterCache                   0
+06/16 19:54:06.218469 00000745 C UTL INFO  default      openMax                          1048576
+06/16 19:54:06.218469 00000745 C UTL INFO  default      streamMax                        16
+06/16 19:54:06.218470 00000745 C UTL INFO  default      pageSizeKB                       4
+06/16 19:54:06.218470 00000745 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:54:06.218471 00000745 C UTL INFO  default      os sysname                       Linux
+06/16 19:54:06.218472 00000745 C UTL INFO  default      os nodename                      tdengine
+06/16 19:54:06.218472 00000745 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:54:06.218473 00000745 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:54:06.218474 00000745 C UTL INFO  default      os machine                       x86_64
+06/16 19:54:06.218474 00000745 C UTL INFO  default      version                          3.3.6.6
+06/16 19:54:06.218475 00000745 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:54:06.218476 00000745 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:54:06.218476 00000745 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:54:06.218477 00000745 C UTL INFO  =================================================================
+06/16 19:54:06.218477 00000745 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:54:06.218855 00000745 C TSC INFO  monitor init
+06/16 19:54:06.219091 00000752 C UTL INFO  scheduler tmr-taskQ is started, thread:752
+06/16 19:54:06.219151 00000753 C UTL INFO  scheduler high-tmr-taskQ is started, thread:753
+06/16 19:54:06.219255 00000755 C TSC INFO  monitor update thread started
+06/16 19:54:06.219339 00000745 C TSC INFO  starting to initialize TAOS driver
+06/16 19:54:06.219346 00000745 C QRY INFO  catalog init
+06/16 19:54:06.219420 00000745 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:54:06.219427 00000745 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:54:06.219439 00000756 C QRY INFO  catalog update thread started
+06/16 19:54:06.219456 00000745 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:54:06.219490 00000745 C QRY INFO  generate clientId:5464299450325306829
+06/16 19:54:06.219598 00000745 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:54:06.219655 00000745 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:54:06.219710 00000745 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:54:06.219759 00000745 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:54:06.219804 00000745 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:54:06.219855 00000745 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:54:06.219901 00000745 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:54:06.219951 00000745 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:54:06.219992 00000745 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:54:06.220061 00000745 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:54:06.220103 00000745 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:54:06.220147 00000745 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:54:06.220189 00000745 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:54:06.220229 00000745 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:54:06.220295 00000745 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:54:06.220340 00000745 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:54:06.220382 00000745 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:54:06.220430 00000745 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:54:06.220470 00000745 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:54:06.220513 00000745 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:54:06.220570 00000745 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:54:06.220626 00000745 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:54:06.220669 00000745 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:54:06.220711 00000745 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:54:06.220762 00000745 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:54:06.220812 00000745 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:54:06.220859 00000745 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:54:06.220902 00000745 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:54:06.220946 00000745 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:54:06.220988 00000745 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:54:06.221034 00000745 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:54:06.221076 00000745 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:54:06.221079 00000745 C UTL INFO  worker:taskWorkPool, queue:0x187186c0 is allocated, ahandle:(nil)
+06/16 19:54:06.221080 00000745 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:54:06.221423 00000789 C TSC INFO  no crash info was found
+06/16 19:54:06.221440 00000745 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:54:06.221646 00000745 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:54:06.221736 00000745 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:54:06.221739 00000745 C TSC INFO  ep:0, tdengine:6030
+06/16 19:54:06.221739 00000745 C TSC INFO  ep:1, tdengine:6030
+06/16 19:54:06.223044 00000745 C TSC INFO  app initialized, appId:0x1a4937896ec00001
+06/16 19:54:06.223114 00000745 C TSC INFO  new app inst mgr:0x1873a000, user:root, ip:tdengine, port:6030
+06/16 19:54:06.223125 00000745 C TSC INFO  conn:0x2, created, p:0x187ee7f0
+06/16 19:54:06.224995 00000757 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:54:06.225102 00000757 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x729c90000fa0
+06/16 19:54:06.225114 00000757 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x729c90000fa0, create counter:taos_slow_sql:count 0x729c90003330
+06/16 19:54:06.225125 00000757 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x729c90000fa0, create counter:taos_sql_req:count 0x729c90003df0
+06/16 19:54:06.225161 00000745 C TSC INFO  conn:0x2, connection is opening, connId:1445497688, dnodeConn:0x2, QID:0xc772e996ec0f0001
+06/16 19:54:06.229465 00000762 C QRY INFO  QID:0xc772e996ec120003 init with pTrans:0x2
+06/16 19:54:06.229698 00000764 C QRY INFO  pTrans 0x2 add to hbConnections for epId:4
+06/16 19:54:06.229716 00000765 C QRY INFO  pTrans 0x2 add to hbConnections for epId:5
+06/16 19:54:06.230624 00000766 C QRY INFO  hb connection updated, nodeId:5, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x3
+06/16 19:54:06.231360 00000770 C QRY INFO  hb connection updated, nodeId:4, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:54:06.232788 00000745 C QRY INFO  QID:0xc772e996ec120003, SID:1, CID:0x4bd5176623008dcd, TID:0x2, EID:0, hb mark removed from hbConnections, epId:4
+06/16 19:54:06.232794 00000745 C QRY INFO  QID:0xc772e996ec120003, SID:1, CID:0x4bd5176623008dcd, TID:0x3, EID:0, hb mark removed from hbConnections, epId:5
+06/16 19:54:06.232989 00000756 C QRY INFO  stb:sensor_data, stb removed from cache, db:1.healpix_cpp_test, suid:0x510f8738e89b1592, ctg:0x187f4630
+06/16 19:54:06.234202 00000745 C TSC INFO  start to cleanup client environment
+06/16 19:54:06.234207 00000745 C TSC INFO  monitor close
+06/16 19:54:06.325246 00000755 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:54:06.425707 00000745 C QRY INFO  start to destroy catalog
+06/16 19:54:06.425833 00000756 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x187f4630
+06/16 19:54:06.425860 00000756 C QRY INFO  catalog update thread stopped
+06/16 19:54:06.425895 00000745 C QRY INFO  catalog destroyed
+06/16 19:54:06.425924 00000745 C QRY INFO  hbConnections cleanup
+06/16 19:54:06.425991 00000780 C UTL INFO  worker:taskWorkPool:23 qset:0x187185a0, got no message and exiting, thread:00000780
+06/16 19:54:06.426033 00000781 C UTL INFO  worker:taskWorkPool:24 qset:0x187185a0, got no message and exiting, thread:00000781
+06/16 19:54:06.426045 00000783 C UTL INFO  worker:taskWorkPool:26 qset:0x187185a0, got no message and exiting, thread:00000783
+06/16 19:54:06.426063 00000784 C UTL INFO  worker:taskWorkPool:27 qset:0x187185a0, got no message and exiting, thread:00000784
+06/16 19:54:06.426049 00000782 C UTL INFO  worker:taskWorkPool:25 qset:0x187185a0, got no message and exiting, thread:00000782
+06/16 19:54:06.426085 00000785 C UTL INFO  worker:taskWorkPool:28 qset:0x187185a0, got no message and exiting, thread:00000785
+06/16 19:54:06.426096 00000786 C UTL INFO  worker:taskWorkPool:29 qset:0x187185a0, got no message and exiting, thread:00000786
+06/16 19:54:06.426102 00000787 C UTL INFO  worker:taskWorkPool:30 qset:0x187185a0, got no message and exiting, thread:00000787
+06/16 19:54:06.426123 00000788 C UTL INFO  worker:taskWorkPool:31 qset:0x187185a0, got no message and exiting, thread:00000788
+06/16 19:54:06.426146 00000763 C UTL INFO  worker:taskWorkPool:6 qset:0x187185a0, got no message and exiting, thread:00000763
+06/16 19:54:06.426162 00000765 C UTL INFO  worker:taskWorkPool:8 qset:0x187185a0, got no message and exiting, thread:00000765
+06/16 19:54:06.426198 00000766 C UTL INFO  worker:taskWorkPool:9 qset:0x187185a0, got no message and exiting, thread:00000766
+06/16 19:54:06.426199 00000762 C UTL INFO  worker:taskWorkPool:5 qset:0x187185a0, got no message and exiting, thread:00000762
+06/16 19:54:06.426204 00000764 C UTL INFO  worker:taskWorkPool:7 qset:0x187185a0, got no message and exiting, thread:00000764
+06/16 19:54:06.426225 00000757 C UTL INFO  worker:taskWorkPool:0 qset:0x187185a0, got no message and exiting, thread:00000757
+06/16 19:54:06.426206 00000760 C UTL INFO  worker:taskWorkPool:3 qset:0x187185a0, got no message and exiting, thread:00000760
+06/16 19:54:06.426229 00000767 C UTL INFO  worker:taskWorkPool:10 qset:0x187185a0, got no message and exiting, thread:00000767
+06/16 19:54:06.426234 00000768 C UTL INFO  worker:taskWorkPool:11 qset:0x187185a0, got no message and exiting, thread:00000768
+06/16 19:54:06.426310 00000758 C UTL INFO  worker:taskWorkPool:1 qset:0x187185a0, got no message and exiting, thread:00000758
+06/16 19:54:06.426325 00000772 C UTL INFO  worker:taskWorkPool:15 qset:0x187185a0, got no message and exiting, thread:00000772
+06/16 19:54:06.426335 00000759 C UTL INFO  worker:taskWorkPool:2 qset:0x187185a0, got no message and exiting, thread:00000759
+06/16 19:54:06.427289 00000770 C UTL INFO  worker:taskWorkPool:13 qset:0x187185a0, got no message and exiting, thread:00000770
+06/16 19:54:06.427962 00000761 C UTL INFO  worker:taskWorkPool:4 qset:0x187185a0, got no message and exiting, thread:00000761
+06/16 19:54:06.430328 00000769 C UTL INFO  worker:taskWorkPool:12 qset:0x187185a0, got no message and exiting, thread:00000769
+06/16 19:54:06.430854 00000777 C UTL INFO  worker:taskWorkPool:20 qset:0x187185a0, got no message and exiting, thread:00000777
+06/16 19:54:06.431096 00000773 C UTL INFO  worker:taskWorkPool:16 qset:0x187185a0, got no message and exiting, thread:00000773
+06/16 19:54:06.435730 00000771 C UTL INFO  worker:taskWorkPool:14 qset:0x187185a0, got no message and exiting, thread:00000771
+06/16 19:54:06.437891 00000775 C UTL INFO  worker:taskWorkPool:18 qset:0x187185a0, got no message and exiting, thread:00000775
+06/16 19:54:06.437893 00000776 C UTL INFO  worker:taskWorkPool:19 qset:0x187185a0, got no message and exiting, thread:00000776
+06/16 19:54:06.437889 00000774 C UTL INFO  worker:taskWorkPool:17 qset:0x187185a0, got no message and exiting, thread:00000774
+06/16 19:54:06.437926 00000779 C UTL INFO  worker:taskWorkPool:22 qset:0x187185a0, got no message and exiting, thread:00000779
+06/16 19:54:06.437993 00000778 C UTL INFO  worker:taskWorkPool:21 qset:0x187185a0, got no message and exiting, thread:00000778
+06/16 19:54:06.438931 00000745 C TSC INFO  destroy app inst mgr 0x1873a000
+06/16 19:54:06.438939 00000745 C RPC INFO  start to close rpc
+06/16 19:54:06.443679 00000745 C RPC INFO  end to close rpc
+06/16 19:54:06.443696 00000745 C TSC INFO  cluster instance map cleaned
+06/16 19:54:06.443791 00000745 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:54:06.443833 00000745 C UTL INFO  [regex cache] destory regex cache
+06/16 19:54:06.443836 00000745 C TSC INFO  all local resources released
+==================================================
+                new log file
+==================================================
+06/16 19:56:28.541984 00000800 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:56:28.541993 00000800 C UTL INFO  env file:.env not load
+06/16 19:56:28.541999 00000800 C UTL INFO  load from env variables cfg success
+06/16 19:56:28.542061 00000800 C UTL INFO                       global config
+06/16 19:56:28.542062 00000800 C UTL INFO  =================================================================
+06/16 19:56:28.542064 00000800 C UTL INFO  default      forceReadConfig                  0
+06/16 19:56:28.542066 00000800 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:56:28.542066 00000800 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:56:28.542067 00000800 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:56:28.542068 00000800 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:56:28.542071 00000800 C UTL INFO  default      queryPolicy                      1
+06/16 19:56:28.542072 00000800 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:56:28.542072 00000800 C UTL INFO  default      enableQueryHb                    1
+06/16 19:56:28.542073 00000800 C UTL INFO  default      enableScience                    0
+06/16 19:56:28.542074 00000800 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:56:28.542074 00000800 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:56:28.542075 00000800 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:56:28.542076 00000800 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:56:28.542076 00000800 C UTL INFO  default      keepColumnName                   0
+06/16 19:56:28.542077 00000800 C UTL INFO  default      smlChildTableName                
+06/16 19:56:28.542078 00000800 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:56:28.542078 00000800 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:56:28.542079 00000800 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:56:28.542080 00000800 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:56:28.542080 00000800 C UTL INFO  default      minSlidingTime                   1
+06/16 19:56:28.542081 00000800 C UTL INFO  default      minIntervalTime                  1
+06/16 19:56:28.542081 00000800 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:56:28.542082 00000800 C UTL INFO  default      useAdapter                       0
+06/16 19:56:28.542083 00000800 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:56:28.542083 00000800 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:56:28.542084 00000800 C UTL INFO  default      bypassFlag                       0
+06/16 19:56:28.542085 00000800 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:56:28.542085 00000800 C UTL INFO  default      numOfRpcSessions                 30000
+06/16 19:56:28.542086 00000800 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:56:28.542087 00000800 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:56:28.542087 00000800 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:56:28.542088 00000800 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:56:28.542089 00000800 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:56:28.542089 00000800 C UTL INFO  default      streamCoverage                   0
+06/16 19:56:28.542090 00000800 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:56:28.542090 00000800 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:56:28.542091 00000800 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:56:28.542092 00000800 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:56:28.542092 00000800 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:56:28.542093 00000800 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:56:28.542100 00000800 C UTL INFO  default      asyncLog                         1
+06/16 19:56:28.542101 00000800 C UTL INFO  default      logKeepDays                      0
+06/16 19:56:28.542102 00000800 C UTL INFO  default      debugFlag                        0
+06/16 19:56:28.542103 00000800 C UTL INFO  default      simDebugFlag                     131
+06/16 19:56:28.542103 00000800 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:56:28.542104 00000800 C UTL INFO  default      uDebugFlag                       131
+06/16 19:56:28.542104 00000800 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:56:28.542105 00000800 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:56:28.542106 00000800 C UTL INFO  default      qDebugFlag                       131
+06/16 19:56:28.542106 00000800 C UTL INFO  default      cDebugFlag                       131
+06/16 19:56:28.542107 00000800 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:56:28.542107 00000800 C UTL INFO  default      numOfCores                       16.00
+06/16 19:56:28.542109 00000800 C UTL INFO  default      simdEnable                       1
+06/16 19:56:28.542110 00000800 C UTL INFO  default      AVX512Enable                     0
+06/16 19:56:28.542111 00000800 C UTL INFO  default      tagFilterCache                   0
+06/16 19:56:28.542111 00000800 C UTL INFO  default      openMax                          1048576
+06/16 19:56:28.542112 00000800 C UTL INFO  default      streamMax                        16
+06/16 19:56:28.542113 00000800 C UTL INFO  default      pageSizeKB                       4
+06/16 19:56:28.542113 00000800 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:56:28.542114 00000800 C UTL INFO  default      os sysname                       Linux
+06/16 19:56:28.542115 00000800 C UTL INFO  default      os nodename                      tdengine
+06/16 19:56:28.542115 00000800 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:56:28.542116 00000800 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:56:28.542116 00000800 C UTL INFO  default      os machine                       x86_64
+06/16 19:56:28.542117 00000800 C UTL INFO  default      version                          3.3.6.6
+06/16 19:56:28.542118 00000800 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:56:28.542118 00000800 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:56:28.542119 00000800 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:56:28.542120 00000800 C UTL INFO  =================================================================
+06/16 19:56:28.542120 00000800 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:56:28.542561 00000800 C TSC INFO  monitor init
+06/16 19:56:28.542872 00000807 C UTL INFO  scheduler tmr-taskQ is started, thread:807
+06/16 19:56:28.542897 00000808 C UTL INFO  scheduler high-tmr-taskQ is started, thread:808
+06/16 19:56:28.543054 00000810 C TSC INFO  monitor update thread started
+06/16 19:56:28.543122 00000800 C TSC INFO  starting to initialize TAOS driver
+06/16 19:56:28.543130 00000800 C QRY INFO  catalog init
+06/16 19:56:28.543205 00000800 C QRY INFO  catalog initialized, maxDb:100, maxTbl:100, dbRentSec:10, stbRentSec:10
+06/16 19:56:28.543215 00000800 C QRY INFO  scheduler init, policy: 1, maxNodeTableNum: 200, reSchedule:0
+06/16 19:56:28.543274 00000800 C QRY INFO  scheduler initialized, maxJob:1000, clientId:0x0
+06/16 19:56:28.543316 00000800 C QRY INFO  generate clientId:13648900117939789633
+06/16 19:56:28.543304 00000811 C QRY INFO  catalog update thread started
+06/16 19:56:28.543392 00000800 C UTL INFO  worker:taskWorkPool:0 is launched, total:1
+06/16 19:56:28.543448 00000800 C UTL INFO  worker:taskWorkPool:1 is launched, total:2
+06/16 19:56:28.543505 00000800 C UTL INFO  worker:taskWorkPool:2 is launched, total:3
+06/16 19:56:28.543552 00000800 C UTL INFO  worker:taskWorkPool:3 is launched, total:4
+06/16 19:56:28.543591 00000800 C UTL INFO  worker:taskWorkPool:4 is launched, total:5
+06/16 19:56:28.543637 00000800 C UTL INFO  worker:taskWorkPool:5 is launched, total:6
+06/16 19:56:28.543689 00000800 C UTL INFO  worker:taskWorkPool:6 is launched, total:7
+06/16 19:56:28.543741 00000800 C UTL INFO  worker:taskWorkPool:7 is launched, total:8
+06/16 19:56:28.543781 00000800 C UTL INFO  worker:taskWorkPool:8 is launched, total:9
+06/16 19:56:28.543824 00000800 C UTL INFO  worker:taskWorkPool:9 is launched, total:10
+06/16 19:56:28.543911 00000800 C UTL INFO  worker:taskWorkPool:10 is launched, total:11
+06/16 19:56:28.543951 00000800 C UTL INFO  worker:taskWorkPool:11 is launched, total:12
+06/16 19:56:28.543990 00000800 C UTL INFO  worker:taskWorkPool:12 is launched, total:13
+06/16 19:56:28.544028 00000800 C UTL INFO  worker:taskWorkPool:13 is launched, total:14
+06/16 19:56:28.544068 00000800 C UTL INFO  worker:taskWorkPool:14 is launched, total:15
+06/16 19:56:28.544108 00000800 C UTL INFO  worker:taskWorkPool:15 is launched, total:16
+06/16 19:56:28.544148 00000800 C UTL INFO  worker:taskWorkPool:16 is launched, total:17
+06/16 19:56:28.544189 00000800 C UTL INFO  worker:taskWorkPool:17 is launched, total:18
+06/16 19:56:28.544226 00000800 C UTL INFO  worker:taskWorkPool:18 is launched, total:19
+06/16 19:56:28.544320 00000800 C UTL INFO  worker:taskWorkPool:19 is launched, total:20
+06/16 19:56:28.544362 00000800 C UTL INFO  worker:taskWorkPool:20 is launched, total:21
+06/16 19:56:28.544409 00000800 C UTL INFO  worker:taskWorkPool:21 is launched, total:22
+06/16 19:56:28.544457 00000800 C UTL INFO  worker:taskWorkPool:22 is launched, total:23
+06/16 19:56:28.544500 00000800 C UTL INFO  worker:taskWorkPool:23 is launched, total:24
+06/16 19:56:28.544544 00000800 C UTL INFO  worker:taskWorkPool:24 is launched, total:25
+06/16 19:56:28.544587 00000800 C UTL INFO  worker:taskWorkPool:25 is launched, total:26
+06/16 19:56:28.544624 00000800 C UTL INFO  worker:taskWorkPool:26 is launched, total:27
+06/16 19:56:28.544664 00000800 C UTL INFO  worker:taskWorkPool:27 is launched, total:28
+06/16 19:56:28.544703 00000800 C UTL INFO  worker:taskWorkPool:28 is launched, total:29
+06/16 19:56:28.544741 00000800 C UTL INFO  worker:taskWorkPool:29 is launched, total:30
+06/16 19:56:28.544781 00000800 C UTL INFO  worker:taskWorkPool:30 is launched, total:31
+06/16 19:56:28.544814 00000800 C UTL INFO  worker:taskWorkPool:31 is launched, total:32
+06/16 19:56:28.544816 00000800 C UTL INFO  worker:taskWorkPool, queue:0x2763c6c0 is allocated, ahandle:(nil)
+06/16 19:56:28.544817 00000800 C QRY INFO  task queue is initialized, numOfThreads: 32
+06/16 19:56:28.545004 00000844 C TSC INFO  no crash info was found
+06/16 19:56:28.545017 00000800 C TSC INFO  TAOS driver is initialized successfully
+06/16 19:56:28.545166 00000800 C TSC INFO  try to connect to (null):0, user:root db:(null)
+06/16 19:56:28.545226 00000800 C TSC INFO  connecting to server, numOfEps:2 inUse:0 user:root db:(null) key:root:dcc5bed04851fec854c035b2e40263b6:(null):0
+06/16 19:56:28.545227 00000800 C TSC INFO  ep:0, tdengine:6030
+06/16 19:56:28.545228 00000800 C TSC INFO  ep:1, tdengine:6030
+06/16 19:56:28.546382 00000800 C TSC INFO  app initialized, appId:0x5670378991800001
+06/16 19:56:28.546437 00000800 C TSC INFO  new app inst mgr:0x2765e000, user:root, ip:tdengine, port:6030
+06/16 19:56:28.546445 00000800 C TSC INFO  conn:0x2, created, p:0x277127f0
+06/16 19:56:28.547954 00000812 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor
+06/16 19:56:28.548075 00000812 C TSC INFO  clusterId:0x512bc0da6a53f4a6, create monitor finished, monitor:0x7b8bbc000fa0
+06/16 19:56:28.548091 00000812 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x7b8bbc000fa0, create counter:taos_slow_sql:count 0x7b8bbc003330
+06/16 19:56:28.548101 00000812 C TSC INFO  clusterId:0x512bc0da6a53f4a6, monitor:0x7b8bbc000fa0, create counter:taos_sql_req:count 0x7b8bbc003df0
+06/16 19:56:28.548179 00000800 C TSC INFO  conn:0x2, connection is opening, connId:2348305053, dnodeConn:0x2, QID:0x3fc3209918020001
+06/16 19:56:28.551948 00000818 C QRY INFO  QID:0x3fc3209918050003 init with pTrans:0x2
+06/16 19:56:28.552141 00000817 C QRY INFO  pTrans 0x2 add to hbConnections for epId:4
+06/16 19:56:28.552149 00000820 C QRY INFO  pTrans 0x2 add to hbConnections for epId:5
+06/16 19:56:28.553600 00000821 C QRY INFO  hb connection updated, nodeId:5, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x2
+06/16 19:56:28.553759 00000822 C QRY INFO  hb connection updated, nodeId:4, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x3
+06/16 19:56:28.555962 00000800 C QRY INFO  QID:0x3fc3209918050003, SID:1, CID:0xbd6aa257a0969f41, TID:0x2, EID:0, hb mark removed from hbConnections, epId:4
+06/16 19:56:28.555968 00000800 C QRY INFO  QID:0x3fc3209918050003, SID:1, CID:0xbd6aa257a0969f41, TID:0x3, EID:0, hb mark removed from hbConnections, epId:5
+06/16 19:56:28.557047 00000830 C QRY INFO  QID:0x3fc32099180c0004 init with pTrans:0x2
+06/16 19:56:28.557223 00000831 C QRY INFO  pTrans 0x2 add to hbConnections for epId:4
+06/16 19:56:28.557325 00000832 C QRY INFO  pTrans 0x2 add to hbConnections for epId:5
+06/16 19:56:28.557789 00000833 C QRY INFO  hb connection updated, nodeId:5, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x9
+06/16 19:56:28.558027 00000834 C QRY INFO  hb connection updated, nodeId:4, fqdn:tdengine, port:6030, pTrans:0x2, pHandle:0x7
+06/16 19:56:28.561616 00000800 C QRY INFO  QID:0x3fc32099180c0004, SID:1, CID:0xbd6aa257a0969f41, TID:0x5, EID:0, hb mark removed from hbConnections, epId:4
+06/16 19:56:28.561625 00000800 C QRY INFO  QID:0x3fc32099180c0004, SID:1, CID:0xbd6aa257a0969f41, TID:0x6, EID:0, hb mark removed from hbConnections, epId:5
+06/16 19:56:28.561799 00000800 C TSC INFO  start to cleanup client environment
+06/16 19:56:28.561803 00000800 C TSC INFO  monitor close
+06/16 19:56:28.648508 00000810 C TSC INFO  monitorThreadFunc quit since no slow log to send
+06/16 19:56:28.748827 00000800 C QRY INFO  start to destroy catalog
+06/16 19:56:28.749035 00000811 C QRY INFO  clusterId:0x512bc0da6a53f4a6, handle freed, ctg:0x27718660
+06/16 19:56:28.749071 00000811 C QRY INFO  catalog update thread stopped
+06/16 19:56:28.749119 00000800 C QRY INFO  catalog destroyed
+06/16 19:56:28.749143 00000800 C QRY INFO  hbConnections cleanup
+06/16 19:56:28.749237 00000843 C UTL INFO  worker:taskWorkPool:31 qset:0x2763c5a0, got no message and exiting, thread:00000843
+06/16 19:56:28.749286 00000813 C UTL INFO  worker:taskWorkPool:1 qset:0x2763c5a0, got no message and exiting, thread:00000813
+06/16 19:56:28.749371 00000814 C UTL INFO  worker:taskWorkPool:2 qset:0x2763c5a0, got no message and exiting, thread:00000814
+06/16 19:56:28.749403 00000842 C UTL INFO  worker:taskWorkPool:30 qset:0x2763c5a0, got no message and exiting, thread:00000842
+06/16 19:56:28.749451 00000812 C UTL INFO  worker:taskWorkPool:0 qset:0x2763c5a0, got no message and exiting, thread:00000812
+06/16 19:56:28.749453 00000816 C UTL INFO  worker:taskWorkPool:4 qset:0x2763c5a0, got no message and exiting, thread:00000816
+06/16 19:56:28.749493 00000817 C UTL INFO  worker:taskWorkPool:5 qset:0x2763c5a0, got no message and exiting, thread:00000817
+06/16 19:56:28.749517 00000821 C UTL INFO  worker:taskWorkPool:9 qset:0x2763c5a0, got no message and exiting, thread:00000821
+06/16 19:56:28.749520 00000818 C UTL INFO  worker:taskWorkPool:6 qset:0x2763c5a0, got no message and exiting, thread:00000818
+06/16 19:56:28.749522 00000825 C UTL INFO  worker:taskWorkPool:13 qset:0x2763c5a0, got no message and exiting, thread:00000825
+06/16 19:56:28.749516 00000819 C UTL INFO  worker:taskWorkPool:7 qset:0x2763c5a0, got no message and exiting, thread:00000819
+06/16 19:56:28.749559 00000826 C UTL INFO  worker:taskWorkPool:14 qset:0x2763c5a0, got no message and exiting, thread:00000826
+06/16 19:56:28.749594 00000834 C UTL INFO  worker:taskWorkPool:22 qset:0x2763c5a0, got no message and exiting, thread:00000834
+06/16 19:56:28.749590 00000820 C UTL INFO  worker:taskWorkPool:8 qset:0x2763c5a0, got no message and exiting, thread:00000820
+06/16 19:56:28.749604 00000830 C UTL INFO  worker:taskWorkPool:18 qset:0x2763c5a0, got no message and exiting, thread:00000830
+06/16 19:56:28.749615 00000822 C UTL INFO  worker:taskWorkPool:10 qset:0x2763c5a0, got no message and exiting, thread:00000822
+06/16 19:56:28.749620 00000823 C UTL INFO  worker:taskWorkPool:11 qset:0x2763c5a0, got no message and exiting, thread:00000823
+06/16 19:56:28.749701 00000828 C UTL INFO  worker:taskWorkPool:16 qset:0x2763c5a0, got no message and exiting, thread:00000828
+06/16 19:56:28.749901 00000824 C UTL INFO  worker:taskWorkPool:12 qset:0x2763c5a0, got no message and exiting, thread:00000824
+06/16 19:56:28.750031 00000836 C UTL INFO  worker:taskWorkPool:24 qset:0x2763c5a0, got no message and exiting, thread:00000836
+06/16 19:56:28.750034 00000835 C UTL INFO  worker:taskWorkPool:23 qset:0x2763c5a0, got no message and exiting, thread:00000835
+06/16 19:56:28.750040 00000827 C UTL INFO  worker:taskWorkPool:15 qset:0x2763c5a0, got no message and exiting, thread:00000827
+06/16 19:56:28.749593 00000815 C UTL INFO  worker:taskWorkPool:3 qset:0x2763c5a0, got no message and exiting, thread:00000815
+06/16 19:56:28.750043 00000829 C UTL INFO  worker:taskWorkPool:17 qset:0x2763c5a0, got no message and exiting, thread:00000829
+06/16 19:56:28.750048 00000832 C UTL INFO  worker:taskWorkPool:20 qset:0x2763c5a0, got no message and exiting, thread:00000832
+06/16 19:56:28.750055 00000841 C UTL INFO  worker:taskWorkPool:29 qset:0x2763c5a0, got no message and exiting, thread:00000841
+06/16 19:56:28.750053 00000831 C UTL INFO  worker:taskWorkPool:19 qset:0x2763c5a0, got no message and exiting, thread:00000831
+06/16 19:56:28.750078 00000833 C UTL INFO  worker:taskWorkPool:21 qset:0x2763c5a0, got no message and exiting, thread:00000833
+06/16 19:56:28.750093 00000837 C UTL INFO  worker:taskWorkPool:25 qset:0x2763c5a0, got no message and exiting, thread:00000837
+06/16 19:56:28.750110 00000840 C UTL INFO  worker:taskWorkPool:28 qset:0x2763c5a0, got no message and exiting, thread:00000840
+06/16 19:56:28.750107 00000838 C UTL INFO  worker:taskWorkPool:26 qset:0x2763c5a0, got no message and exiting, thread:00000838
+06/16 19:56:28.750109 00000839 C UTL INFO  worker:taskWorkPool:27 qset:0x2763c5a0, got no message and exiting, thread:00000839
+06/16 19:56:28.750692 00000800 C TSC INFO  destroy app inst mgr 0x2765e000
+06/16 19:56:28.750698 00000800 C RPC INFO  start to close rpc
+06/16 19:56:28.753553 00000800 C RPC INFO  end to close rpc
+06/16 19:56:28.753563 00000800 C TSC INFO  cluster instance map cleaned
+06/16 19:56:28.753842 00000800 C RPC ERROR http-report failed to destroy chanId:-1, reason:Ref is not there
+06/16 19:56:28.753867 00000800 C UTL INFO  [regex cache] destory regex cache
+06/16 19:56:28.753872 00000800 C TSC INFO  all local resources released

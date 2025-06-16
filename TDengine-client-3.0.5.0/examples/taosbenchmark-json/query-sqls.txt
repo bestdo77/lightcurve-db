@@ -1,2 +1,0 @@
-select last_row(*) from meters
-select count(*) from d0

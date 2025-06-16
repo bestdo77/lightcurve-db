@@ -150,11 +150,11 @@ private:
     std::map<std::string, std::vector<int>> result_counts_by_type;
     
 public:
-    AsyncTDengineQueryTester(const std::string& host = "localhost",
+    AsyncTDengineQueryTester(const std::string& host = "tdengine",
                            const std::string& user = "root", 
                            const std::string& password = "taosdata",
                            int port = 6030,
-                           const std::string& database = "test_db",
+                           const std::string& database = "healpix_cpp_test",
                            const std::string& table = "sensor_data",
                            int nside_param = 64)
         : conn(nullptr), db_name(database), table_name(table), nside(nside_param) {
@@ -713,15 +713,15 @@ void async_fetch_callback(void* param, TAOS_RES* res, int numOfRows) {
 
 int main() {
     try {
-        std::cout << "🌟 TDengine HealPix 一亿数据完整异步性能测试器" << std::endl;
+        std::cout << "🌟 TDengine HealPix Async 容器化异步查询测试器" << std::endl;
         std::cout << "=================================================" << std::endl;
         
         AsyncTDengineQueryTester tester;
         g_tester = &tester;  // 设置全局指针供回调函数使用
         
         // 🔥 加载大数据文件
-        if (!tester.loadTestData("../data/test_data_100M.csv")) {
-            std::cerr << "❌ 请确认一亿数据文件存在: ../data/test_data_100M.csv" << std::endl;
+        if (!tester.loadTestData("/app/data/test_data_100M.csv")) {
+            std::cerr << "❌ 请确认一亿数据文件存在: /app/data/test_data_100M.csv" << std::endl;
             return 1;
         }
         

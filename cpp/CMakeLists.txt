@@ -77,4 +77,4 @@ message(STATUS "TDengine library: ${TAOS_LIB}")
 # 安装目标
 install(TARGETS generate_astronomical_data query_test quick_import
     DESTINATION bin
-) 
+)

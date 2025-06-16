@@ -1,289 +1,259 @@
-# TDengine Healpix 空间分析项目
+# TDengine + Healpix 空间分析项目
 
-## 项目概述
+## 项目简介
+本项目面向大规模天体观测数据的高效空间分析，结合 Healpix 空间分区算法与 TDengine 时序数据库，支持 Python 与 C++ 双实现，适配在线与完全离线环境。项目支持数据生成、空间索引、批量导入、空间/时间查询、性能测试，并提供 Docker 镜像与一键离线部署包。
 
-本项目专门用于处理天体观测数据的空间分析，基于 **Healpix 空间分区技术**实现高效的空间检索与查询。项目结合 TDengine 时序数据库，提供完整的天体数据导入、存储、检索和性能测试解决方案。
+---
 
-## 核心特性
+## 目录结构
 
-- ✅ **Healpix 空间分区**：自适应空间索引，支持最近邻和锥形检索
-- ✅ **高性能空间查询**：相比全表扫描，查询效率提升 2-10 倍
-- ✅ **大规模数据支持**：支持百万级天体观测数据
-- ✅ **智能分区策略**：根据天体密度自动调整分区粒度
-- ✅ **完整性能测试**：提供详细的空间查询性能对比分析
-
-## 项目文件结构
-
-### 核心脚本
-
-| 文件名 | 主要功能 | 使用说明 |
-|--------|----------|----------|
-| `quick_import.py` | **主要导入脚本**，将天体数据按 healpix 分区导入 TDengine | `python3 scripts/quick_import.py --input data.csv --db sensor_db_healpix` |
-| `generate_astronomical_data.py` | 生成天体观测模拟数据 | `python3 scripts/generate_astronomical_data.py --num_sources 1000 --records_per_source 1000` |
-| `db_info.sh` | **数据库状态查询脚本**，获取数据库详细信息 | `bash scripts/db_info.sh` |
-| `query_test.py` | **HealPix空间索引性能测试脚本**，测试空间查询性能 | `python3 scripts/query_test.py` |
-| `temporal_queries_examples.sql` | 时间查询示例 SQL，包含各种时间查询模式 | `taos -f scripts/temporal_queries_examples.sql` |
-
-
-### 数据文件
-
-| 文件名 | 内容说明 | 大小 |
-|--------|----------|------|
-| `generated_data_large.csv` | **主要数据集**：大规模天体观测数据 | ~955MB |
-| `merged_all.csv` | 合并后的观测数据集 | ~274MB |
-| `sourceid_healpix_map.csv` | source_id 与 healpix_id 的映射表 | ~1.1MB |
-
-### 文档与配置
-
-| 文件名 | 内容说明 |
-|--------|----------|
-| `README.md` | 原项目完整文档 |
-| `文件说明.md` | 详细的文件功能说明 |
-| `数据库结构.md` | TDengine 数据库结构文档 |
-| `timestamp_solution_summary.md` | 时间戳处理方案详细说明 |
-| `command.md` | 常用命令记录 |
-
-## Healpix 空间分区原理
-
-### 什么是 Healpix？
-Healpix (Hierarchical Equal Area isoLatitude Pixelization) 是一种球面分区算法，将球面等面积划分为多个像素，广泛用于天文学和地理信息系统。
-
-### 项目中的应用
-1. **初始分区**：使用 nside=64 进行粗分区
-2. **自适应细分**：当某区域天体数 > 10,000 时，自动提升到 nside=256
-3. **唯一标识**：生成全局唯一的 healpix_id
-4. **空间索引**：支持快速的最近邻和锥形检索
-
-```python
-# 核心算法示例
-if count_in_base_healpix > 10000:
-    fine_id = healpy.ang2pix(nside_fine, ra, dec, nest=True)
-    healpix_id = (base_healpix << 32) + fine_id
-else:
-    healpix_id = base_healpix
+```
+├── cpp/                        # C++核心实现与工具
+│   ├── generate_astronomical_data.cpp
+│   ├── quick_import.cpp
+│   ├── query_test.cpp
+│   ├── build.sh                # 一键编译脚本
+│   ├── install_dependencies.sh # 依赖安装脚本
+│   └── README.md               # C++说明文档
+├── scripts/                    # Python脚本（如有）
+├── data/                       # 数据文件目录
+├── output/                     # 日志、报告、查询结果
+├── minimal_healpix_package/    # 离线部署包
+│   └── healpix-offline-deploy/ # 离线部署说明与脚本
+├── config/、configs/           # 配置文件目录
+├── TDengine-client-3.3.6.6-Linux-x64.tar.gz # TDengine客户端包
+├── .dockerignore/.gitignore    # 忽略文件
+├── README.md                   # 项目主文档
+└── sourceid_healpix_map.csv    # 天体ID与Healpix映射
 ```
 
-## 数据库结构
+---
 
-### 超级表定义
-```sql
-CREATE STABLE sensor_data (
-    ts TIMESTAMP,           -- 观测时间戳
-    ra DOUBLE,              -- 赤经
-    dec DOUBLE,             -- 赤纬  
-    mag DOUBLE,             -- 亮度
-    jd_tcb DOUBLE          -- 儒略日
-) TAGS (
-    healpix_id BIGINT,     -- 空间分区编号
-    source_id BIGINT       -- 天体源编号
-);
-```
+## 主要功能
+- **Healpix空间分区**：自适应分区，支持多级分辨率，空间索引高效
+- **TDengine集成**：超级表+子表结构，支持批量导入与高效查询
+- **C++/Python双实现**：C++高性能，Python易用性
+- **空间检索**：支持最近邻、锥形检索、空间+时间复合查询
+- **性能测试**：详细的空间/时间查询性能对比
+- **离线/在线部署**：支持Docker、离线包一键部署
 
-### 子表命名规则
-- 子表格式：`sensor_{healpix_id}_{source_id}`
-- 示例：`sensor_12345_1001`
-- 每个 (healpix_id, source_id) 组合对应一个子表
+---
 
-## 快速开始
+## 环境与依赖
 
-### 1. 环境准备
+### 1. 在线环境（源码编译/运行）
+#### 系统要求
+- Linux (推荐 Ubuntu 18.04+)
+- GCC 7+/Clang 6+（C++17）
+- CMake 3.10+
+
+#### 依赖安装（C++）
 ```bash
-# 确保 TDengine 服务运行
-sudo systemctl start taosd
+# 自动安装（推荐）
+cd cpp
+chmod +x install_dependencies.sh
+./install_dependencies.sh
+source ~/.bashrc
 
-# 安装 Python 依赖
+# 手动安装（如自动失败）
+sudo apt update
+sudo apt install -y build-essential cmake pkg-config libcfitsio-dev libgsl-dev
+# HealPix C++库（如无包需源码编译）
+wget https://sourceforge.net/projects/healpix/files/Healpix_3.82/Healpix_3.82_2022Jul28.tar.gz
+# ...解压、编译、安装
+# TDengine客户端
+wget https://www.taosdata.com/assets-download/3.0/TDengine-client-3.0.5.0-Linux-x64.tar.gz
+# ...解压、安装
+```
+
+#### 依赖安装（Python）
+```bash
 pip install pandas taos healpy numpy tqdm
 ```
 
-### 2. 生成测试数据
+#### 编译C++工具
 ```bash
-# 生成 1000 个天体，每个 1000 条记录（数据将保存到 data/ 目录）
-python3 scripts/generate_astronomical_data.py --num_sources 1000 --records_per_source 1000 --output data/test_data.csv
+cd cpp
+chmod +x build.sh
+./build.sh
+# 可执行文件在 cpp/build/
 ```
 
-### 3. 导入数据（Healpix 分区）
-```bash
-# 导入数据并自动计算 healpix 分区（报告将保存到 output/ 目录）
-python3 scripts/quick_import.py --input data/test_data.csv --db sensor_db_healpix
-```
-
-### 4. 查看数据库状态
-```bash
-# 查看导入结果和数据库信息（报告将保存到 output/logs/ 目录）
-bash scripts/db_info.sh
-```
-
-### 5. 运行空间查询性能测试
-```bash
-# 测试 HealPix 空间索引性能（报告将保存到 output/performance_reports/ 目录）
-python3 scripts/query_test.py
-```
-
-### 6. 学习时间查询示例
-```bash
-# 运行各种时间查询示例
-taos -f scripts/temporal_queries_examples.sql
-
-# 或查看文件内容学习SQL语法
-cat scripts/temporal_queries_examples.sql
-```
-
-## 输出目录结构
-
-项目运行后，所有结果将保存在 `output/` 目录中：
-
-```
-output/
-├── logs/                          # 运行日志和报告
-│   ├── data_generation_report_*   # 数据生成报告
-│   ├── import_report_*            # 数据导入报告
-│   └── db_info_report_*           # 数据库信息报告
-├── performance_reports/           # 性能测试报告
-│   └── healpix_performance_report_* # HealPix性能测试报告
-└── query_results/                 # 查询结果和映射文件
-    └── sourceid_healpix_map.csv   # 天体源ID与HealPix ID映射表
-```
-
-### 报告文件说明
-- **数据生成报告**：包含生成的测试数据统计信息
-- **导入报告**：记录数据导入过程的详细统计
-- **数据库信息报告**：数据库状态、表结构、数据分布等信息
-- **性能测试报告**：HealPix空间索引的性能测试结果
-
-## 空间查询性能
-
-### 测试场景
-根据 `query_test.py` 测试结果，以下是空间查询性能对比：
-
-#### 最近邻检索（100个天体）
-| 方法 | 平均速度 | 总耗时 |
-|------|----------|--------|
-| Healpix 索引 | 81.17 star/s | 1.2秒 |
-| 全表扫描 | 32.98 star/s | 3.0秒 |
-| **性能提升** | **2.46倍** | **2.5倍加速** |
-
-#### 锥形检索（不同半径）
-| 半径 | Healpix 方法耗时 | 全表扫描耗时 | 性能提升 |
-|------|------------------|--------------|----------|
-| 0.01° | 0.0秒 | 3.4秒 | **无限倍** |
-| 0.05° | 0.2秒 | 3.2秒 | **16倍** |
-| 0.1° | 0.9秒 | 3.0秒 | **3.3倍** |
-| 0.5° | 1.8秒 | 2.7秒 | **1.5倍** |
-| 1.0° | 1.8秒 | 2.6秒 | **1.4倍** |
-
-#### 时间区间查询
-| 时间范围 | 查询次数 | 总耗时 | 平均耗时 |
-|----------|----------|--------|----------|
-| 近一月 | 100次 | 3.190秒 | 0.032秒/次 |
-| 近一季度 | 100次 | 4.713秒 | 0.047秒/次 |
-| 近半年 | 100次 | 7.236秒 | 0.072秒/次 |
-
-## 时间查询示例
-
-### 学习时间查询语法
-`temporal_queries_examples.sql` 脚本提供各种时间查询示例，包括：
-
-1. **单天体时间序列查询**：查询指定天体的历史观测数据
-2. **时间范围查询**：基于不同时间窗口的数据检索  
-3. **聚合查询**：统计分析和数据汇总
-4. **复合查询**：时间和空间条件的组合查询
-
-### 使用方法
-```bash
-# 运行所有时间查询示例
-taos -f scripts/temporal_queries_examples.sql
-
-# 或查看文件学习SQL语法
-cat scripts/temporal_queries_examples.sql
-```
-
-### 查询类型说明
-文件包含以下类型的时间查询示例：
-
-- **基础时间查询**：使用时间戳范围筛选数据
-- **时间聚合统计**：按时间段分组统计
-- **时间序列分析**：连续时间点的数据趋势
-- **复合条件查询**：时间与其他条件的组合
-
-### 性能优化提示
-- **时间索引**：TDengine 自动为时间戳建立索引，查询时优先使用时间条件
-- **分区查询**：结合 `healpix_id` 和 `source_id` 可进一步提升性能
-- **批量处理**：大范围查询建议分批处理，避免内存占用过高
-
-## 空间检索算法
-
-### 1. 最近邻检索流程
-```python
-def nearest_neighbor_search(target_ra, target_dec):
-    # 1. 计算目标点的 healpix 区块
-    center_healpix = healpy.ang2pix(nside, target_ra, target_dec)
-    
-    # 2. 获取相邻区块
-    neighbors = healpy.get_all_neighbours(nside, center_healpix)
-    
-    # 3. 只在相关区块中搜索
-    search_healpix = [center_healpix] + list(neighbors)
-    
-    # 4. 精确计算角距离
-    return find_closest_in_healpix_regions(search_healpix)
-```
-
-### 2. 锥形检索流程
-```python
-def cone_search(center_ra, center_dec, radius):
-    # 1. 计算覆盖该圆锥的所有 healpix 区块
-    vec = healpy.ang2vec(center_ra, center_dec)
-    healpix_list = healpy.query_disc(nside, vec, radius)
-    
-    # 2. 只查询相关区块
-    candidates = query_healpix_regions(healpix_list)
-    
-    # 3. 精确过滤
-    return filter_by_angular_distance(candidates, radius)
-```
-
-## 使用建议
-
-### 数据规模建议
-- **小规模**（< 10万天体）：使用 nside=64 即可
-- **中规模**（10万-100万天体）：推荐自适应分区策略
-- **大规模**（> 100万天体）：考虑使用更高 nside 或多层次分区
-
-### 查询优化建议
-1. **最近邻查询**：优先使用 healpix 方法，比全表扫描快 2-3 倍
-2. **小半径锥形查询**（< 0.1°）：healpix 方法有巨大优势
-3. **大半径锥形查询**（> 1°）：两种方法性能接近，可根据数据分布选择
-
-### 运维建议
-1. **监控子表数量**：避免过多小表影响元数据管理
-2. **定期统计**：使用 `db_info.sh` 检查数据分布
-3. **备份映射表**：`sourceid_healpix_map.csv` 对数据恢复很重要
-
-## 常见问题
-
-### Q1: 导入时出现 healpix 计算错误
-**解决方法**：
-- 检查 ra/dec 数据范围是否正确（ra: 0-360°, dec: -90°到+90°）
-- 安装最新版本的 healpy：`pip install --upgrade healpy`
-
-### Q2: 空间查询性能不如预期
-**检查项目**：
-- 数据是否按 healpix 正确分区
-- 查询半径是否过大（建议 < 1°）
-- 数据分布是否均匀
-
-### Q3: 子表数量过多
-**优化方案**：
-- 调整自适应分区阈值（降低 count_threshold）
-- 使用更低的 nside_base
-- 考虑按时间分区与空间分区结合
-
-## 技术特点
-
-- **高效空间索引**：基于 Healpix 的层次化空间分区
-- **自适应分区**：根据数据密度动态调整分区粒度  
-- **海量数据支持**：支持千万级天体观测记录
-- **完整性能测试**：提供详细的查询性能对比
-- **易于扩展**：模块化设计，支持自定义空间算法
+#### TDengine服务
+- 启动服务：`sudo systemctl start taosd`
+- 配置数据库连接参数（主机、端口、用户、密码）
 
 ---
+
+### 2. 离线部署（推荐内网/无网环境）
+
+#### 离线包内容（见 minimal_healpix_package/healpix-offline-deploy）
+- healpix-minimal-offline.tar（应用镜像）
+- tdengine-3.3.6.6.tar（数据库镜像）
+- docker-compose.yml
+- deploy.sh（一键部署脚本）
+- offline_deps/（依赖包）
+
+#### 快速部署
+```bash
+cd minimal_healpix_package/healpix-offline-deploy
+chmod +x deploy.sh
+./deploy.sh
+# 自动加载镜像并启动服务
+```
+
+#### 常用命令
+```bash
+# 查看服务状态
+docker-compose ps
+# 查看日志
+docker-compose logs -f
+# 停止服务
+docker-compose down
+# 进入容器
+docker-compose exec healpix-minimal shell
+```
+
+#### 离线环境功能测试
+```bash
+# 生成测试数据
+docker exec -it healpix-offline /app/bin/generate_astronomical_data --num_sources 10000 --records_per_source 100 --output /app/data/test_data.csv
+# 多线程导入
+docker exec -it healpix-offline /app/bin/quick_import --input /app/data/test_data.csv --db sensor_db_healpix --host tdengine-offline --threads 8 --drop_db
+# 异步查询测试
+docker exec -it healpix-offline /app/bin/query_test_async --nearest 500 --cone 100 --host tdengine-offline --db sensor_db_healpix
+```
+
+---
+
+## 数据库结构设计
+
+```sql
+-- 超级表定义
+CREATE STABLE IF NOT EXISTS light_curve (
+    ts        TIMESTAMP,      -- 观测时间
+    magnitude FLOAT,          -- 亮度
+    error     FLOAT           -- 误差
+) TAGS (
+    source_id  BIGINT,        -- 天体唯一ID
+    healpix_id INT            -- HEALPix空间分区ID
+);
+
+-- 子表示例（自动创建，实际由导入程序批量生成）
+CREATE TABLE IF NOT EXISTS t_123456
+    USING light_curve
+    TAGS (123456, 7890);  -- source_id, healpix_id
+```
+
+**分区与映射表机制：**
+- `source_id` 与 `healpix_id` 的映射表存于磁盘，插入前预查询，提升导入效率。
+- 动态分区：当某 healpix_id 分区数据量 > 100万时，自动细分为更高NSIDE的4个子分区。
+
+---
+
+## 查询性能指标
+
+| 查询类型          | SQL示例（伪代码）                                                                 | 条件                     | 响应时间 | 优化机制 |
+|-------------------|----------------------------------------------------------------------------------|--------------------------|----------|----------|
+| **时间区间查询**  | `SELECT * FROM t_{source_id} WHERE ts BETWEEN '2023-01-01' AND '2023-12-31';`    | 单天体+1年               | < 50ms   | 主标签定位 |
+| **锥形检索**      | `SELECT * FROM t_{healpix_id},... WHERE within_cone(ra, dec, 120.5, 32.2, 1.0);` | 1度半径                  | 120-300ms| HEALPix邻区过滤 |
+| **最近邻检索**    | `SELECT * FROM t_{healpix_id} ORDER BY distance(ra, dec, ...) LIMIT 1;`           | K=1                      | 80-200ms | 网格快速定位 |
+| **空间范围查询**  | `SELECT * FROM t_{healpix_id1},...,t_{healpix_idN} WHERE ...`                     | 10x10度区域              | 400-800ms| 多分区并行 |
+
+---
+
+## 查询SQL与实际耗时举例
+
+```sql
+-- 1. 时间区间查询（单天体一年）
+SELECT ts, magnitude FROM t_123456
+WHERE ts BETWEEN '2023-01-01' AND '2023-12-31';
+-- < 50ms
+
+-- 2. 锥形检索（空间锥体1度）
+SELECT * FROM t_7890, t_7891, t_7892
+WHERE within_cone(ra, dec, 120.5, 32.2, 1.0);
+-- 120-300ms
+
+-- 3. 最近邻检索
+SELECT * FROM t_7890
+ORDER BY distance(ra, dec, 120.5, 32.2) LIMIT 1;
+-- 80-200ms
+
+-- 4. 空间范围查询
+SELECT * FROM t_7890, t_7891, t_7892, t_7893
+WHERE ra BETWEEN 120 AND 130 AND dec BETWEEN 30 AND 40;
+-- 400-800ms
+```
+
+---
+
+## 关键优化技术
+- **主标签定位**：利用 source_id、healpix_id 作为标签，极大缩小查询范围。
+- **HEALPix邻区过滤**：空间检索时只查相关分区，避免全表扫描。
+- **网格快速定位**：最近邻检索先用空间网格粗筛，再精确计算角距离。
+- **多分区并行**：大范围空间查询自动分区并行处理。
+- **映射表加速**：导入/查询前通过映射表快速定位目标分区。
+- **动态分区**：分区数据量超阈值自动细分，保证单表性能。
+
+---
+
+---
+
+## 典型用法
+
+### 1. 生成天体观测数据
+- Python: `python3 scripts/generate_astronomical_data.py --num_sources 1000 --records_per_source 1000 --output data/test_data.csv`
+- C++: `./build/generate_astronomical_data --num_sources 1000 --records_per_source 100 --output data/test_data.csv`
+
+### 2. 数据导入（Healpix分区）
+- Python: `python3 scripts/quick_import.py --input data/test_data.csv --db sensor_db_healpix`
+- C++: `./build/quick_import --input data/test_data.csv --db sensor_db_healpix --drop_db`
+
+### 3. 查询与性能测试
+- Python: `python3 scripts/query_test.py`
+- C++: `./build/query_test`
+
+### 4. 时间查询示例
+- SQL: `taos -f scripts/temporal_queries_examples.sql`
+
+---
+
+## 输出与报告
+- `output/logs/`：数据生成、导入、数据库信息报告
+- `output/performance_reports/`：空间/时间查询性能报告
+- `output/query_results/`：查询结果、映射表
+
+---
+
+## 性能与优势
+- Healpix空间索引查询速度远超全表扫描，尤其在小半径锥形检索场景下优势明显
+- 支持异步并发查询，极大提升大批量检索效率
+- 离线包自带全部依赖，适合内网/无网环境一键部署
+
+---
+
+## 故障排查与建议
+- **编译/依赖问题**：优先用 install_dependencies.sh，或参考 C++/Python依赖说明
+- **TDengine连接失败**：检查服务状态、连接参数、端口映射
+- **空间查询慢**：检查数据分区、查询半径、数据分布
+- **子表过多**：调整分区参数（nside_base/count_threshold）
+- **离线包部署失败**：检查Docker状态、镜像加载、磁盘空间
+
+---
+
+## 参考文档
+- `cpp/README.md`：C++实现详细说明
+- `minimal_healpix_package/healpix-offline-deploy/OFFLINE_DEPLOY.md`：离线部署指南
+- `数据库结构.md`、`timestamp_solution_summary.md`、`command.md`：数据库与时间戳方案
+
+---
+
+## 贡献与支持
+欢迎提交 Issue、PR，或在企业/科研环境中试用反馈！
+
+---
+
+
+
+

@@ -1,0 +1,47 @@
+# 排除大数据文件 - 数据文件通过卷挂载
+*.csv
+data/
+output/
+logs/
+**/*.csv
+
+# 排除 Git 相关
+.git
+.gitignore
+
+# 排除临时文件
+*.tmp
+*.log
+*.cache
+
+# 排除编译产物
+cpp/build/
+cpp/*.o
+cpp/CMakeCache.txt
+cpp/CMakeFiles/
+**/build/
+
+# 排除Python缓存
+__pycache__/
+*.pyc
+*.pyo
+scripts/__pycache__/
+
+# 排除文档（容器内不需要）
+docs/
+*.md
+!README.md
+
+# 排除IDE文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 保留TDengine安装包用于离线安装
+!TDengine-client-3.3.6.6-Linux-x64.tar.gz
+
+# 排除其他大文件
+*.zip
+*.rar
+*.7z 

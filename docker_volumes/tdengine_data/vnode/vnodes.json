@@ -1,0 +1,23 @@
+{
+	"vnodes":	[{
+			"vgId":	2,
+			"dropped":	0,
+			"vgVersion":	1,
+			"diskPrimary":	0
+		}, {
+			"vgId":	3,
+			"dropped":	0,
+			"vgVersion":	1,
+			"diskPrimary":	0
+		}, {
+			"vgId":	4,
+			"dropped":	0,
+			"vgVersion":	1,
+			"diskPrimary":	0
+		}, {
+			"vgId":	5,
+			"dropped":	0,
+			"vgVersion":	1,
+			"diskPrimary":	0
+		}]
+}

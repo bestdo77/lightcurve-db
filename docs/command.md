@@ -1,1 +1,0 @@
-conda activate base && pip install taospy

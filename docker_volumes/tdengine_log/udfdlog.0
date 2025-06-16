@@ -1,0 +1,161 @@
+==================================================
+                new log file
+==================================================
+06/16 19:38:04.946949 00000100 C UTL INFO  load from cfg file /etc/taos/taos.cfg success
+06/16 19:38:04.946957 00000100 C UTL INFO  env file:.env not load
+06/16 19:38:04.946964 00000100 C UTL INFO  load from env variables cfg success
+06/16 19:38:04.946977 00000100 C UTL INFO  start to read config file:/var/lib/taos//dnode/config/global.json
+06/16 19:38:04.946990 00000100 C UTL INFO  config file:/var/lib/taos//dnode/config/global.json does not exist
+06/16 19:38:04.946992 00000100 C UTL INFO  load config from tsDataDir:/var/lib/taos/
+06/16 19:38:04.946995 00000100 C UTL INFO  start to read config file:/var/lib/taos//dnode/config/local.json
+06/16 19:38:04.947000 00000100 C UTL INFO  config file:/var/lib/taos//dnode/config/local.json does not exist
+06/16 19:38:04.947213 00000100 C UTL INFO                       global config
+06/16 19:38:04.947221 00000100 C UTL INFO  =================================================================
+06/16 19:38:04.947224 00000100 C UTL INFO  default      forceReadConfig                  0
+06/16 19:38:04.947227 00000100 C UTL INFO  default      firstEp                          tdengine:6030
+06/16 19:38:04.947230 00000100 C UTL INFO  default      secondEp                         tdengine:6030
+06/16 19:38:04.947233 00000100 C UTL INFO  env_var      fqdn                             tdengine
+06/16 19:38:04.947235 00000100 C UTL INFO  default      serverPort                       6030
+06/16 19:38:04.947238 00000100 C UTL INFO  default      tempDir                          /tmp/
+06/16 19:38:04.947241 00000100 C UTL INFO  default      minimalTmpDirGB                  1.00
+06/16 19:38:04.947245 00000100 C UTL INFO  default      queryPolicy                      1
+06/16 19:38:04.947248 00000100 C UTL INFO  default      queryTableNotExistAsEmpty        0
+06/16 19:38:04.947250 00000100 C UTL INFO  default      enableQueryHb                    1
+06/16 19:38:04.947253 00000100 C UTL INFO  default      enableScience                    0
+06/16 19:38:04.947255 00000100 C UTL INFO  default      querySmaOptimize                 0
+06/16 19:38:04.947258 00000100 C UTL INFO  default      queryPlannerTrace                0
+06/16 19:38:04.947326 00000100 C UTL INFO  default      queryNodeChunkSize               32768
+06/16 19:38:04.947354 00000100 C UTL INFO  default      queryUseNodeAllocator            1
+06/16 19:38:04.947358 00000100 C UTL INFO  default      keepColumnName                   0
+06/16 19:38:04.947360 00000100 C UTL INFO  default      smlChildTableName                
+06/16 19:38:04.947363 00000100 C UTL INFO  default      smlAutoChildTableNameDelimiter   
+06/16 19:38:04.947366 00000100 C UTL INFO  default      smlTagName                       _tag_null
+06/16 19:38:04.947369 00000100 C UTL INFO  default      smlTsDefaultName                 _ts
+06/16 19:38:04.947371 00000100 C UTL INFO  default      smlDot2Underline                 1
+06/16 19:38:04.947374 00000100 C UTL INFO  default      minSlidingTime                   1
+06/16 19:38:04.947376 00000100 C UTL INFO  default      minIntervalTime                  1
+06/16 19:38:04.947379 00000100 C UTL INFO  default      maxInsertBatchRows               1000000
+06/16 19:38:04.947382 00000100 C UTL INFO  default      useAdapter                       0
+06/16 19:38:04.947384 00000100 C UTL INFO  default      queryMaxConcurrentTables         200
+06/16 19:38:04.947387 00000100 C UTL INFO  default      metaCacheMaxSize                 -1
+06/16 19:38:04.947389 00000100 C UTL INFO  default      bypassFlag                       0
+06/16 19:38:04.947392 00000100 C UTL INFO  default      numOfRpcThreads                  8
+06/16 19:38:04.947394 00000100 C UTL INFO  default      numOfRpcSessions                 10000
+06/16 19:38:04.947397 00000100 C UTL INFO  default      numOfTaskQueueThreads            32
+06/16 19:38:04.947399 00000100 C UTL INFO  default      multiResultFunctionStarReturnTa  0
+06/16 19:38:04.947402 00000100 C UTL INFO  default      countAlwaysReturnValue           1
+06/16 19:38:04.947405 00000100 C UTL INFO  default      maxTsmaCalcDelay                 600
+06/16 19:38:04.947414 00000100 C UTL INFO  default      tsmaDataDeleteMark               86400000
+06/16 19:38:04.947416 00000100 C UTL INFO  default      streamCoverage                   0
+06/16 19:38:04.947419 00000100 C UTL INFO  default      compareAsStrInGreatest           1
+06/16 19:38:04.947422 00000100 C UTL INFO  default      dataDir                          /var/lib/taos/
+06/16 19:38:04.947424 00000100 C UTL INFO  default      minimalDataDirGB                 2.00
+06/16 19:38:04.947427 00000100 C UTL INFO  default      supportVnodes                    37
+06/16 19:38:04.947430 00000100 C UTL INFO  default      maxShellConns                    50000
+06/16 19:38:04.947433 00000100 C UTL INFO  default      queryBufferSize                  -1
+06/16 19:38:04.947435 00000100 C UTL INFO  default      numOfCommitThreads               4
+06/16 19:38:04.947438 00000100 C UTL INFO  default      numOfCompactThreads              2
+06/16 19:38:04.947440 00000100 C UTL INFO  default      queryUseMemoryPool               1
+06/16 19:38:04.947443 00000100 C UTL INFO  default      memPoolFullFunc                  0
+06/16 19:38:04.947445 00000100 C UTL INFO  default      singleQueryMaxMemorySize         0
+06/16 19:38:04.947448 00000100 C UTL INFO  default      minReservedMemorySize            0
+06/16 19:38:04.947450 00000100 C UTL INFO  default      queryNoFetchTimeoutSec           18000
+06/16 19:38:04.947453 00000100 C UTL INFO  default      numOfMnodeReadThreads            2
+06/16 19:38:04.947455 00000100 C UTL INFO  default      numOfVnodeQueryThreads           32
+06/16 19:38:04.947458 00000100 C UTL INFO  default      ratioOfVnodeStreamThreads        0.50
+06/16 19:38:04.947461 00000100 C UTL INFO  default      numOfVnodeFetchThreads           4
+06/16 19:38:04.947464 00000100 C UTL INFO  default      numOfVnodeRsmaThreads            16
+06/16 19:38:04.947466 00000100 C UTL INFO  default      numOfQnodeQueryThreads           32
+06/16 19:38:04.947469 00000100 C UTL INFO  default      numOfSnodeSharedThreads          4
+06/16 19:38:04.947471 00000100 C UTL INFO  default      numOfSnodeUniqueThreads          4
+06/16 19:38:04.947474 00000100 C UTL INFO  default      rpcQueueMemoryAllowed            2180676812
+06/16 19:38:04.947476 00000100 C UTL INFO  default      syncLogBufferMemoryAllowed       2180676812
+06/16 19:38:04.947479 00000100 C UTL INFO  default      syncRoutineReportInterval        300
+06/16 19:38:04.947482 00000100 C UTL INFO  cfg_file     monitorFqdn                      localhost
+06/16 19:38:04.947484 00000100 C UTL INFO  default      monitorPort                      6043
+06/16 19:38:04.947487 00000100 C UTL INFO  default      telemetryPort                    80
+06/16 19:38:04.947489 00000100 C UTL INFO  default      rsyncPort                        873
+06/16 19:38:04.947492 00000100 C UTL INFO  default      snodeAddress                     
+06/16 19:38:04.947495 00000100 C UTL INFO  default      checkpointBackupDir              /var/lib/taos/backup/checkpoint/
+06/16 19:38:04.947497 00000100 C UTL INFO  default      diskIDCheckEnabled               0
+06/16 19:38:04.947500 00000100 C UTL INFO  default      filterScalarMode                 0
+06/16 19:38:04.947502 00000100 C UTL INFO  default      maxStreamBackendCache            128
+06/16 19:38:04.947505 00000100 C UTL INFO  default      pqSortMemThreshold               16
+06/16 19:38:04.947507 00000100 C UTL INFO  default      s3BucketName                     <bucketname>
+06/16 19:38:04.947510 00000100 C UTL INFO  default      minDiskFreeSize                  52428800
+06/16 19:38:04.947512 00000100 C UTL INFO  default      streamNotifyMessageSize          8192
+06/16 19:38:04.947515 00000100 C UTL INFO  default      streamNotifyFrameSize            256
+06/16 19:38:04.947518 00000100 C UTL INFO  default      adapterFqdn                      localhost
+06/16 19:38:04.947520 00000100 C UTL INFO  default      adapterPort                      6041
+06/16 19:38:04.947523 00000100 C UTL INFO  default      adapterToken                     cm9vdDp0YW9zZGF0YQ==
+06/16 19:38:04.947528 00000100 C UTL INFO  default      streamVirtualMergeMaxDelay       10000
+06/16 19:38:04.947531 00000100 C UTL INFO  default      streamVirtualMergeMaxMem         16384
+06/16 19:38:04.947533 00000100 C UTL INFO  default      streamVirtualMergeWaitMode       0
+06/16 19:38:04.947536 00000100 C UTL INFO  default      configDir                        /etc/taos/
+06/16 19:38:04.947538 00000100 C UTL INFO  default      scriptDir                        /etc/taos/
+06/16 19:38:04.947541 00000100 C UTL INFO  default      logDir                           /var/log/taos/
+06/16 19:38:04.947543 00000100 C UTL INFO  default      minimalLogDirGB                  1.00
+06/16 19:38:04.947546 00000100 C UTL INFO  default      numOfLogLines                    10000000
+06/16 19:38:04.947549 00000100 C UTL INFO  default      asyncLog                         1
+06/16 19:38:04.947551 00000100 C UTL INFO  default      logKeepDays                      0
+06/16 19:38:04.947554 00000100 C UTL INFO  default      debugFlag                        0
+06/16 19:38:04.947556 00000100 C UTL INFO  default      simDebugFlag                     131
+06/16 19:38:04.947559 00000100 C UTL INFO  default      tmrDebugFlag                     131
+06/16 19:38:04.947561 00000100 C UTL INFO  default      uDebugFlag                       131
+06/16 19:38:04.947564 00000100 C UTL INFO  default      rpcDebugFlag                     131
+06/16 19:38:04.947566 00000100 C UTL INFO  default      jniDebugFlag                     131
+06/16 19:38:04.947569 00000100 C UTL INFO  default      qDebugFlag                       131
+06/16 19:38:04.947571 00000100 C UTL INFO  default      cDebugFlag                       131
+06/16 19:38:04.947574 00000100 C UTL INFO  default      tqClientDebugFlag                131
+06/16 19:38:04.947576 00000100 C UTL INFO  default      dDebugFlag                       131
+06/16 19:38:04.947579 00000100 C UTL INFO  default      vDebugFlag                       131
+06/16 19:38:04.947581 00000100 C UTL INFO  default      mDebugFlag                       131
+06/16 19:38:04.947583 00000100 C UTL INFO  default      wDebugFlag                       131
+06/16 19:38:04.947586 00000100 C UTL INFO  default      azDebugFlag                      131
+06/16 19:38:04.947588 00000100 C UTL INFO  default      sDebugFlag                       131
+06/16 19:38:04.947591 00000100 C UTL INFO  default      tsdbDebugFlag                    131
+06/16 19:38:04.947593 00000100 C UTL INFO  default      tqDebugFlag                      131
+06/16 19:38:04.947596 00000100 C UTL INFO  default      tqClientDebug                    131
+06/16 19:38:04.947598 00000100 C UTL INFO  default      fsDebugFlag                      131
+06/16 19:38:04.947601 00000100 C UTL INFO  default      udfDebugFlag                     131
+06/16 19:38:04.947603 00000100 C UTL INFO  default      smaDebugFlag                     131
+06/16 19:38:04.947606 00000100 C UTL INFO  default      idxDebugFlag                     131
+06/16 19:38:04.947608 00000100 C UTL INFO  default      tdbDebugFlag                     131
+06/16 19:38:04.947610 00000100 C UTL INFO  default      metaDebugFlag                    131
+06/16 19:38:04.947613 00000100 C UTL INFO  default      stDebugFlag                      131
+06/16 19:38:04.947615 00000100 C UTL INFO  default      sndDebugFlag                     131
+06/16 19:38:04.947618 00000100 C UTL INFO  default      numOfCores                       16.00
+06/16 19:38:04.947621 00000100 C UTL INFO  default      simdEnable                       1
+06/16 19:38:04.947624 00000100 C UTL INFO  default      AVX512Enable                     0
+06/16 19:38:04.947626 00000100 C UTL INFO  default      tagFilterCache                   0
+06/16 19:38:04.947629 00000100 C UTL INFO  default      openMax                          1048576
+06/16 19:38:04.947631 00000100 C UTL INFO  default      streamMax                        16
+06/16 19:38:04.947634 00000100 C UTL INFO  default      pageSizeKB                       4
+06/16 19:38:04.947636 00000100 C UTL INFO  default      totalMemoryKB                    21295672
+06/16 19:38:04.947646 00000100 C UTL INFO  default      os sysname                       Linux
+06/16 19:38:04.947649 00000100 C UTL INFO  default      os nodename                      tdengine
+06/16 19:38:04.947651 00000100 C UTL INFO  default      os release                       6.8.0-60-generic
+06/16 19:38:04.947654 00000100 C UTL INFO  default      os version                       #63~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Tue Apr 22 19:00:15 UTC 2
+06/16 19:38:04.947656 00000100 C UTL INFO  default      os machine                       x86_64
+06/16 19:38:04.947659 00000100 C UTL INFO  default      version                          3.3.6.6
+06/16 19:38:04.947662 00000100 C UTL INFO  default      compatible_version               3.0.0.0
+06/16 19:38:04.947664 00000100 C UTL INFO  default      gitinfo                          59b4c6eba1c816533d1554169dafdb3c0236f508
+06/16 19:38:04.947667 00000100 C UTL INFO  default      buildinfo                        Linux-x64 2025-05-13 16:51:39 +0800
+06/16 19:38:04.947669 00000100 C UTL INFO  =================================================================
+06/16 19:38:04.947671 00000100 C UTL INFO  check global fqdn:tdengine and port:6030
+06/16 19:38:04.947720 00000100 C UDF INFO  udfd start with config file /etc/taos/
+06/16 19:38:04.947726 00000100 C UDF INFO  udfd start with mnode ep tdengine
+06/16 19:38:04.947975 00000100 C UDF INFO  udfd rpc client is opened
+06/16 19:38:04.948237 00000100 C UDF INFO  udfd create udf source directory /var/lib/taos//.udf. result: success
+06/16 19:38:04.948246 00000100 C UDF INFO  udfd udf source directory is created
+06/16 19:38:04.948251 00000100 C UDF INFO  udfd global data is inited
+06/16 19:38:04.948312 00000100 C UDF INFO  get dnodeId:0 from env, pipe path:/var/lib/taos//.taosudf.sock.0
+06/16 19:38:04.948327 00000100 C UDF INFO  remove listening pipe /var/lib/taos//.taosudf.sock.0 : no such file or directory, lino:1601
+06/16 19:38:04.948344 00000100 C UDF INFO  bind to pipe /var/lib/taos//.taosudf.sock.0
+06/16 19:38:04.948381 00000100 C UDF INFO  udfd uv is inited
+06/16 19:38:04.948384 00000100 C UDF INFO  udfd resident functions are inited
+06/16 19:38:04.948386 00000100 C UDF INFO  start udfd event loop
+06/16 19:53:04.012070 00000111 C UTL INFO  process log rotation
+06/16 20:53:04.003227 00000111 C UTL INFO  process log rotation
+06/16 21:53:04.017128 00000111 C UTL INFO  process log rotation
+06/16 22:53:04.024586 00000111 C UTL INFO  process log rotation

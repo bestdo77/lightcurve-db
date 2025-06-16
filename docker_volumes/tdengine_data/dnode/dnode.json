@@ -1,0 +1,13 @@
+{
+	"dnodeId":	1,
+	"dnodeVer":	"2",
+	"engineVer":	"30000000",
+	"clusterId":	"5848980585390011558",
+	"dropped":	0,
+	"dnodes":	[{
+			"id":	1,
+			"fqdn":	"tdengine",
+			"port":	6030,
+			"isMnode":	1
+		}]
+}
